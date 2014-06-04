@@ -19,8 +19,7 @@ sub stem {
     # nouns and adjectives
     # -oj -on -ojn → o
     # -aj -an -ajn → a
-    return $word
-        if $word =~ s{ (?<= [ao] ) (?: [jn] | jn ) $}{}x;
+    $word =~ s{ (?<= [ao] ) (?: [jn] | jn ) $}{}x;
 
     # possessive adjectives
     # -in → -i
@@ -33,10 +32,12 @@ sub stem {
     return $word
         if $word =~ s{ (?: [aio] n? t )? (?: [aiou] s | u ) $}{i}x;
 
+    # compound verbs
     # -inti -anti -onti -iti -ati -oti → -i
     # -inte -ante -onte -ite -ate -ote → -i
+    # -inta -anta -onta -ita -ata -ota → -i
     return $word
-        if $word =~ s{ (?: [aio] n? t ) [ei] $}{i}x;
+        if $word =~ s{ (?: [aio] n? t ) [aei] $}{i}x;
 
     # un’ un' → unu
     return $word
