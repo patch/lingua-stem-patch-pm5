@@ -16,19 +16,27 @@ sub stem {
 
     $word = lc $word;
 
-    # -oj -on -ojn -aj -an -ajn
+    # nouns and adjectives
+    # -oj -on -ojn → o
+    # -aj -an -ajn → a
     return $word
         if $word =~ s{ (?<= [ao] ) (?: [jn] | jn ) $}{}x;
 
-    # -is -as -os -us -u
+    # possessive adjectives
+    # -in → -i
+    return $word
+        if $word =~ s{ (?<= i ) n $}{}x;
+
+    # verbs
+    # -is -as -os -us -u → -i
     return $word
         if $word =~ s{ (?: [aiou]s | u ) $}{i}x;
 
-    # un’ un'
+    # un’ un' → unu
     return $word
         if $word =~ s{ (?<= \b un ) [’'] $}{u}x;
 
-    # -’ -'
+    # -’ -' → -o
     return $word
         if $word =~ s{ [’'] $}{o}x;
 
