@@ -31,7 +31,12 @@ sub stem {
     # -int- -ant- -ont- -it- -at- -ot- (optional)
     # -is -as -os -us -u → -i
     return $word
-        if $word =~ s{ (?: [aio] n? t )? (?: [aiou] s | [iu] ) $}{i}x;
+        if $word =~ s{ (?: [aio] n? t )? (?: [aiou] s | u ) $}{i}x;
+
+    # -inti -anti -onti -iti -ati -oti → -i
+    # -inte -ante -onte -ite -ate -ote → -i
+    return $word
+        if $word =~ s{ (?: [aio] n? t ) [ei] $}{i}x;
 
     # un’ un' → unu
     return $word
