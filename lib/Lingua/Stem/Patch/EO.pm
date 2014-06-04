@@ -31,6 +31,10 @@ sub stem {
     # -inta -anta -onta -ita -ata -ota → -i
     $word =~ s{ (?: [aio] n? t ) [aei] $}{i}x;
 
+    # lexical aspect
+    # ek- el-
+    $word =~ s{^ e [kl] }{}x;
+
     # imperfective verbs and action nouns
     # -adi -ado → -i
     return $word

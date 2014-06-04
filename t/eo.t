@@ -2,7 +2,7 @@ use utf8;
 use strict;
 use warnings;
 use open qw( :encoding(UTF-8) :std );
-use Test::More tests => 93;
+use Test::More tests => 95;
 use Lingua::Stem::Patch::EO qw( stem );
 
 is stem('mi'),          'mi',     'personal pronoun';
@@ -94,6 +94,8 @@ is stem('laborotajn'),  'labori', '-otajn';
 is stem('laboradi'),    'labori', '-adi';
 is stem('laboradas'),   'labori', '-adas';
 is stem('laborado'),    'labori', '-ado';
+is stem('eklabori'),    'labori', 'ek-';
+is stem('ellabori'),    'labori', 'el-';
 is stem('hund’'),       'hundo',  '-’ noun with typographic apostrophe';
 is stem("hund'"),       'hundo',  "-' noun with typewriter apostrophe";
 is stem('un’'),         'unu',    '-’ unu with typographic apostrophe';
