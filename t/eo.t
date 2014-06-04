@@ -1,0 +1,23 @@
+use utf8;
+use strict;
+use warnings;
+use open qw( :encoding(UTF-8) :std );
+use Test::More tests => 16;
+use Lingua::Stem::Patch::EO qw( stem );
+
+is stem('hundo'),   'hundo',  'noun';
+is stem('hundoj'),  'hundo',  'plural noun';
+is stem('hundon'),  'hundo',  'accusative noun';
+is stem('hundojn'), 'hundo',  'accusative plural noun';
+is stem('hund’'),   'hundo',  'noun with typographic apostrophe';
+is stem("hund'"),   'hundo',  'noun with typewriter apostrophe';
+is stem('longa'),   'longa',  'adjective';
+is stem('longaj'),  'longa',  'plural adjective';
+is stem('longan'),  'longa',  'accusative adjective';
+is stem('longajn'), 'longa',  'accusative plural adjective';
+is stem('labori'),  'labori', 'infinitive verb';
+is stem('laboris'), 'labori', 'past indicative verb';
+is stem('laboras'), 'labori', 'present indicative verb';
+is stem('laboros'), 'labori', 'future indicative verb';
+is stem('laborus'), 'labori', 'vonditional verb';
+is stem('laboru'),  'labori', 'jussive verb';
