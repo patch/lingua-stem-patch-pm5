@@ -1,4 +1,4 @@
-package Lingua::Stem::IO;
+package Lingua::Stem::Patch::IO;
 
 use v5.8.1;
 use utf8;
@@ -39,16 +39,16 @@ Lingua::Stem::IO - Ido stemmer
 
 =head1 VERSION
 
-This document describes Lingua::Stem::IO v0.00_1.
+This document describes Lingua::Stem::Patch::IO v0.00_1.
 
 =head1 SYNOPSIS
 
-    use Lingua::Stem::IO qw( stem_io );
+    use Lingua::Stem::Patch::IO qw( stem_io );
 
     my $stem = stem_io($word);
 
     # alternate syntax
-    $stem = Lingua::Stem::IO::stem($word);
+    $stem = Lingua::Stem::Patch::IO::stem($word);
 
 =head1 DESCRIPTION
 

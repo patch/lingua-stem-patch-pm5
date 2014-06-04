@@ -1,4 +1,4 @@
-package Lingua::Stem::EO;
+package Lingua::Stem::Patch::EO;
 
 use v5.8.1;
 use utf8;
@@ -43,20 +43,20 @@ __END__
 
 =head1 NAME
 
-Lingua::Stem::EO - Esperanto stemmer
+Lingua::Stem::Patch::EO - Esperanto stemmer
 
 =head1 VERSION
 
-This document describes Lingua::Stem::EO v0.00_1.
+This document describes Lingua::Stem::Patch::EO v0.00_1.
 
 =head1 SYNOPSIS
 
-    use Lingua::Stem::EO qw( stem_eo );
+    use Lingua::Stem::Patch::EO qw( stem_eo );
 
     my $stem = stem_eo($word);
 
     # alternate syntax
-    $stem = Lingua::Stem::EO::stem($word);
+    $stem = Lingua::Stem::Patch::EO::stem($word);
 
 =head1 DESCRIPTION
 

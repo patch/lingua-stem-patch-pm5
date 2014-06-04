@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use open qw( :encoding(UTF-8) :std );
 use Test::More tests => 18;
-use Lingua::Stem::EO qw( stem );
+use Lingua::Stem::Patch::EO qw( stem );
 
 is stem('hundo'),   'hundo',  'noun';
 is stem('hundoj'),  'hundo',  'plural noun';
