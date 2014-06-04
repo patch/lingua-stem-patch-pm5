@@ -21,23 +21,25 @@ sub stem {
     # -aj -an -ajn → a
     $word =~ s{ (?<= [ao] ) (?: [jn] | jn ) $}{}x;
 
-    # possessive adjectives
-    # -in → -i
-    return $word
-        if $word =~ s{ (?<= i ) n $}{}x;
-
     # verbs
-    # -int- -ant- -ont- -it- -at- -ot- (optional)
     # -is -as -os -us -u → -i
-    return $word
-        if $word =~ s{ (?: [aio] n? t )? (?: [aiou] s | u ) $}{i}x;
+    $word =~ s{ (?: [aiou] s | u ) $}{i}x;
 
     # compound verbs
     # -inti -anti -onti -iti -ati -oti → -i
     # -inte -ante -onte -ite -ate -ote → -i
     # -inta -anta -onta -ita -ata -ota → -i
+    $word =~ s{ (?: [aio] n? t ) [aei] $}{i}x;
+
+    # imperfective verbs and action nouns
+    # -adi -ado → -i
     return $word
-        if $word =~ s{ (?: [aio] n? t ) [aei] $}{i}x;
+        if $word =~ s{ ad [io] $}{i}x;
+
+    # possessive adjectives
+    # -in → -i
+    return $word
+        if $word =~ s{ (?<= i ) n $}{}x;
 
     # un’ un' → unu
     return $word
