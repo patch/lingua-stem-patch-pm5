@@ -23,6 +23,7 @@ my $builder = Module::Build->new(
         'strict'   => 0,
         'utf8'     => 0,
         'warnings' => 0,
+        'Exporter' => 0,
     },
     meta_merge => {
         resources => {
