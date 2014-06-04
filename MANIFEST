@@ -1,5 +1,7 @@
 Build.PL
 Changes
+lib/Lingua/Stem/EO.pm
+lib/Lingua/Stem/IO.pm
 lib/Lingua/Stem/Patch.pm
 LICENSE
 MANIFEST			This list of files
@@ -8,3 +10,4 @@ META.yml
 README
 t/00-load.t
 t/eo.t
+t/io.t
