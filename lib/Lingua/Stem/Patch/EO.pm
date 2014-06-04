@@ -28,9 +28,10 @@ sub stem {
         if $word =~ s{ (?<= i ) n $}{}x;
 
     # verbs
+    # -int- -ant- -ont- -it- -at- -ot- (optional)
     # -is -as -os -us -u → -i
     return $word
-        if $word =~ s{ (?: [aiou]s | u ) $}{i}x;
+        if $word =~ s{ (?: [aio] n? t )? (?: [aiou] s | [iu] ) $}{i}x;
 
     # un’ un' → unu
     return $word
