@@ -1,3 +1,7 @@
+[![Build status](https://travis-ci.org/patch/lingua-stem-patch-pm5.png)](https://travis-ci.org/patch/lingua-stem-patch-pm5)
+[![Coverage status](https://coveralls.io/repos/patch/lingua-stem-patch-pm5/badge.png)](https://coveralls.io/r/patch/lingua-stem-patch-pm5)
+[![CPAN version](https://badge.fury.io/pl/Lingua-Stem-Patch.png)](http://badge.fury.io/pl/Lingua-Stem-Patch)
+
 # NAME
 
 Lingua::Stem::Patch - Patch stemmers
