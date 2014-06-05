@@ -6,7 +6,7 @@ use strict;
 use warnings;
 use parent 'Exporter';
 
-our $VERSION   = '0.00_1';
+our $VERSION   = '0.01';
 our @EXPORT_OK = qw( stem stem_io );
 
 *stem_io = \&stem;
@@ -39,7 +39,7 @@ Lingua::Stem::IO - Ido stemmer
 
 =head1 VERSION
 
-This document describes Lingua::Stem::Patch::IO v0.00_1.
+This document describes Lingua::Stem::Patch::IO v0.01.
 
 =head1 SYNOPSIS
 

@@ -1,1 +1,5 @@
 Revision history for Perl module Lingua::Stem::Patch
+
+0.01 2014-06-05
+ - First release
+ - Languages supported: Esperanto (eo), Ido (io)

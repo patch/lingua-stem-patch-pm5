@@ -6,7 +6,7 @@ use strict;
 use warnings;
 use parent 'Exporter';
 
-our $VERSION   = '0.00_1';
+our $VERSION   = '0.01';
 our @EXPORT_OK = qw( stem stem_eo );
 
 *stem_eo = \&stem;
@@ -84,7 +84,7 @@ Lingua::Stem::Patch::EO - Esperanto stemmer
 
 =head1 VERSION
 
-This document describes Lingua::Stem::Patch::EO v0.00_1.
+This document describes Lingua::Stem::Patch::EO v0.01.
 
 =head1 SYNOPSIS
 
