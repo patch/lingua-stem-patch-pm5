@@ -2,10 +2,50 @@ package Lingua::Stem::Patch;
 
 use v5.8.1;
 use utf8;
-use strict;
-use warnings;
+use Carp;
+
+use Moo;
+use namespace::clean;
 
 our $VERSION = '0.00_1';
+
+my @languages   = qw( eo io );
+my %is_language = map { $_ => 1 } @languages;
+
+has language => (
+    is       => 'rw',
+    isa      => sub { croak "Invalid language '$_[0]'"
+                      unless $is_language{$_[0]} },
+    coerce   => sub { defined $_[0] ? lc $_[0] : '' },
+    trigger  => sub { $_[0]->_clear_stemmer },
+    required => 1,
+);
+
+has _stemmer => (
+    is      => 'rw',
+    builder => '_build_stemmer',
+    clearer => '_clear_stemmer',
+    lazy    => 1,
+);
+
+sub _build_stemmer {
+    my $self = shift;
+    my $language = uc $self->language;
+
+    require "Lingua/Stem/Patch/$language.pm";
+    $self->_stemmer( \&{"Lingua::Stem::Patch::${language}::stem"} );
+}
+
+sub languages {
+    return @languages;
+}
+
+sub stem {
+    my $self = shift;
+    my @stems = map { $self->_stemmer->($_) } @_;
+
+    return wantarray ? @stems : pop @stems;
+}
 
 1;
 
@@ -25,9 +65,88 @@ This document describes Lingua::Stem::Patch v0.00_1.
 
     use Lingua::Stem::Patch;
 
+    # create Esperanto stemmer
+    $stemmer = Lingua::Stem::Patch->new(language => 'eo');
+
+    # get stem for word
+    $stem = $stemmer->stem($word);
+
+    # get list of stems for list of words
+    @stems = $stemmer->stem(@words);
+
 =head1 DESCRIPTION
 
-Patch stemmers.
+This module contains a collection of stemmers for multiple languages using the
+Patch stemming algorithms. The languages currently implemented are
+L<Esperanto|Lingua::Stem::Patch::EO> and L<Ido|Lingua::Stem::Patch::IO>.
+
+This is a new project under active development and the current stemming
+algorithms are likely to change.
+
+=head2 Attributes
+
+=over
+
+=item language
+
+The following language codes are currently supported.
+
+    ┌───────────┬────┐
+    │ Esperanto │ eo │
+    │ Ido       │ io │
+    └───────────┴────┘
+
+They are in the two-letter ISO 639-1 format and are case-insensitive but are
+always returned in lowercase when requested.
+
+    # instantiate a stemmer object
+    $stemmer = Lingua::Stem::Patch->new(language => $language);
+
+    # get current language
+    $language = $stemmer->language;
+
+    # change language
+    $stemmer->language($language);
+
+=back
+
+=head2 Methods
+
+=over
+
+=item stem
+
+Accepts a list of words, stems each word, and returns a list of stems. The list
+returned will always have the same number of elements in the same order as the
+list provided. When no stemming rules apply to a word, the original word is
+returned.
+
+    @stems = $stemmer->stem(@words);
+
+    # get the stem for a single word
+    $stem = $stemmer->stem($word);
+
+The words should be provided as character strings and the stems are returned as
+character strings. Byte strings in arbitrary character encodings are
+intentionally not supported.
+
+=item languages
+
+Returns a list of supported two-letter language codes using lowercase letters.
+
+    # object method
+    @languages = $stemmer->languages;
+
+    # class method
+    @languages = Lingua::Stem::Patch->languages;
+
+=back
+
+=head1 SEE ALSO
+
+L<Lingua::Stem::Any> provides a unified interface to any stemmer on CPAN,
+including this module, as well as additional features like normalization,
+casefolding, and in-place stemming.
 
 =head1 AUTHOR
 

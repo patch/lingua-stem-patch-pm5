@@ -19,11 +19,15 @@ my $builder = Module::Build->new(
         'Test::More' => '0.82',
     },
     requires => {
-        'perl'     => '5.8.1',
-        'strict'   => 0,
-        'utf8'     => 0,
-        'warnings' => 0,
-        'Exporter' => 0,
+        'perl'             => '5.8.1',
+        'namespace::clean' => 0,
+        'parent'           => 0,
+        'strict'           => 0,
+        'utf8'             => 0,
+        'warnings'         => 0,
+        'Carp'             => 0,
+        'Exporter'         => 0,
+        'Moo'              => '1.001000',
     },
     meta_merge => {
         resources => {

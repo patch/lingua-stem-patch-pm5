@@ -9,5 +9,6 @@ META.json
 META.yml
 README
 t/00-load.t
+t/01-stemmer.t
 t/eo.t
 t/io.t
