@@ -2,7 +2,7 @@ use utf8;
 use strict;
 use warnings;
 use open qw( :encoding(UTF-8) :std );
-use Test::More tests => 101;
+use Test::More tests => 103;
 use Lingua::Stem::Patch::EO qw( stem );
 
 is stem('mi'),          'mi',        'personal pronoun';
@@ -102,6 +102,8 @@ is stem('laboronto'),   'laboranto', '-onto';
 is stem('laborato'),    'laborato',  '-ato';
 is stem('laborito'),    'laborato',  '-ito';
 is stem('laboroto'),    'laborato',  '-oto';
+is stem('esperanto'),   'esperanto', 'esperanto: keep -anto';
+is stem('kanto'),       'kanto',     'kanto: keep -anto';
 is stem('hund’'),       'hundo',     '-’ noun with typographic apostrophe';
 is stem("hund'"),       'hundo',     "-' noun with typewriter apostrophe";
 is stem('un’'),         'unu',       '-’ unu with typographic apostrophe';

@@ -47,6 +47,17 @@ sub stem {
     return $word
         if $word =~ s{ ad [io] $}{i}x;
 
+    # exceptions: not participle nouns
+    return $word if $word =~ m{ \b (?:
+        esperanto
+        | ganto
+        | horizonto
+        | kanto
+        | monto
+        | ponto
+        | rakonto
+    ) $ }x;
+
     # participle nouns
     # -into -anto -onto → -anto
     # -ito  -ato  -oto  → -ato
