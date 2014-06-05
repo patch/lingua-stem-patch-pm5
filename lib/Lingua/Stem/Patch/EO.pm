@@ -21,6 +21,13 @@ sub stem {
     # -aj -an -ajn → a
     $word =~ s{ (?<= [ao] ) (?: [jn] | jn ) $}{}x;
 
+    # un’ un' → unu
+    return $word
+        if $word =~ s{ (?<= \b un ) [’'] $}{u}x;
+
+    # -’ -' → -o
+    $word =~ s{ [’'] $}{o}x;
+
     # verbs
     # -is -as -os -us -u → -i
     $word =~ s{ (?: [aiou] s | u ) $}{i}x;
@@ -40,18 +47,16 @@ sub stem {
     return $word
         if $word =~ s{ ad [io] $}{i}x;
 
+    # participle nouns
+    # -into -anto -onto → -anto
+    # -ito  -ato  -oto  → -ato
+    return $word
+        if $word =~ s{ [aio] ( n? ) to $}{a$1to}x;
+
     # possessive adjectives
     # -in → -i
     return $word
         if $word =~ s{ (?<= i ) n $}{}x;
-
-    # un’ un' → unu
-    return $word
-        if $word =~ s{ (?<= \b un ) [’'] $}{u}x;
-
-    # -’ -' → -o
-    return $word
-        if $word =~ s{ [’'] $}{o}x;
 
     return $word;
 }
