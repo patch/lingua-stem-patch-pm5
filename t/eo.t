@@ -2,9 +2,10 @@ use utf8;
 use strict;
 use warnings;
 use open qw( :encoding(UTF-8) :std );
-use Test::More tests => 103;
+use Test::More tests => 104;
 use Lingua::Stem::Patch::EO qw( stem );
 
+is stem('kaj'),         'kaj',       'conjunction';
 is stem('mi'),          'mi',        'personal pronoun';
 is stem('min'),         'mi',        '-n accusative personal pronoun';
 is stem('mia'),         'mia',       '-a possesive adjective';

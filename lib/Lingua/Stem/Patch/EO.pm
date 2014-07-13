@@ -13,7 +13,10 @@ our @EXPORT_OK = qw( stem stem_eo stem_aggressive stem_eo_aggressive );
 *stem_eo_aggressive = \&stem_aggressive;
 
 my %protect = (
-    particple => { map { $_ => 1 } qw(
+    root => { map { $_ => 1 } qw(
+        kaj
+    ) },
+    participle => { map { $_ => 1 } qw(
         esperanto ganto horizonto kanto monto ponto rakonto
     ) },
     aggressive => { map { $_ => 1 } qw(
@@ -25,6 +28,9 @@ sub stem {
     my ($word) = @_;
 
     $word = lc $word;
+
+    # protected: basic roots
+    return $word if $protect{root}{$word};
 
     # nouns and adjectives
     # -oj -on -ojn → o
