@@ -75,6 +75,9 @@ sub stem {
     # -inta -anta -onta -ita -ata -ota → -i
     $word =~ s{ (?: [aio] n? t ) [aei] $}{i}x;
 
+    # accusative adverbs: -en → -o
+    $word =~ s{ en $}{o}x;
+
     # lexical aspect: ek- el-
     $word =~ s{^ e [kl] }{}x;
 

@@ -2,7 +2,7 @@ use utf8;
 use strict;
 use warnings;
 use open qw( :encoding(UTF-8) :std );
-use Test::More tests => 104;
+use Test::More tests => 105;
 use Lingua::Stem::Patch::EO qw( stem_aggressive );
 
 *stem = \&stem_aggressive;
@@ -102,6 +102,7 @@ is stem('laboronto'),   'laborant', '-onto';
 is stem('laborato'),    'laborat',  '-ato';
 is stem('laborito'),    'laborat',  '-ito';
 is stem('laboroto'),    'laborat',  '-oto';
+is stem('hejmen'),      'hejm',     '-en accusative adverb';
 is stem('esperanto'),   'esperant', 'esperanto: keep -anto';
 is stem('kanto'),       'kant',     'kanto: keep -anto';
 is stem('hund’'),       'hund',     '-’ noun with typographic apostrophe';
