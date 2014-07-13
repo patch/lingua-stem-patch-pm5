@@ -18,13 +18,16 @@ my %protect = (
         map { $start . $_ } qw( a al am e el es o om u )
     } qw( ki ti i ĉi neni ) },
     root => { map { $_ => 1 } qw(
-        kaj la
+        ĉar ĉi ĉu kaj ke la minus plus se
+        ĉe da de el ekster en ĝis je kun na po pri pro sen tra
+        ajn do ja jen ju ne pli tamen tre tro
+        ci ĝi ili li mi ni oni ri si ŝi ŝli vi
+        unu du tri kvin
+        ĵus nun plu tuj
+        amen bis boj fi ha he ho hu hura nu ve
     ) },
-    participle => { map { $_ => 1 } qw(
+    noun => { map { $_ => 1 } qw(
         esperanto ganto horizonto kanto monto ponto rakonto
-    ) },
-    aggressive => { map { $_ => 1 } qw(
-        ci ĝi ili li mi ni oni si ŝi vi
     ) },
 );
 
@@ -33,62 +36,60 @@ sub stem {
 
     $word = lc $word;
 
-    # l’ l' → la
-    $word =~ s{ (?<= ^ l ) ['’] $}{a}x;
-
-    # protected: basic roots
+    # standalone roots
     return $word if $protect{root}{$word};
+
+    # l’ l' → la
+    return 'la'
+        if $word =~ m{^ l [’'] $}x;
 
     # un’ un' unuj → unu
     return 'unu'
-        if $word =~ m{^ un (?: ['’] | uj ) $}x;
-
-    # nouns and adjectives
-    # -oj -on -ojn → o
-    # -aj -an -ajn → a
-    $word =~ s{ (?<= [aou] ) (?: [jn] | jn ) $}{}x;
+        if $word =~ m{^ un (?: [’'] | uj ) $}x;
 
     # -’ -' → -o
     $word =~ s{ [’'] $}{o}x;
 
+    # nouns, adjectives, -u correlatives
+    # -oj -on -ojn → o
+    # -aj -an -ajn → a
+    # -uj -un -ujn → u
+    $word =~ s{ (?<= [aou] ) (?: [jn] | jn ) $}{}x;
+
+    # accusative pronouns: -in → -i
+    return $word
+        if $word =~ s{ (?<= i ) n $}{}x;
+
     # correlatives: -en → -e
     $word =~ s{^ ( (?: [ĉkt] | nen )? ie ) n $}{$1}x;
 
-    # protected: correlatives
+    # correlative roots
     return $word if $protect{correlative}{$word};
 
-    # verbs
-    # -is -as -os -us -u → -i
+    # verbs: -is -as -os -us -u → -i
     $word =~ s{ (?: [aiou] s | u ) $}{i}x;
 
-    # compound verbs
+    # compound verbs:
     # -inti -anti -onti -iti -ati -oti → -i
     # -inte -ante -onte -ite -ate -ote → -i
     # -inta -anta -onta -ita -ata -ota → -i
     $word =~ s{ (?: [aio] n? t ) [aei] $}{i}x;
 
-    # lexical aspect
-    # ek- el-
+    # lexical aspect: ek- el-
     $word =~ s{^ e [kl] }{}x;
 
-    # imperfective verbs and action nouns
-    # -adi -ado → -i
+    # imperfective verbs & action nouns: -adi -ado → -i
     return $word
         if $word =~ s{ ad [io] $}{i}x;
 
-    # protected: participle nouns
-    return $word if $protect{participle}{$word};
+    # non-participle nouns
+    return $word if $protect{noun}{$word};
 
-    # participle nouns
+    # participle nouns:
     # -into -anto -onto → -anto
     # -ito  -ato  -oto  → -ato
     return $word
         if $word =~ s{ [aio] ( n? ) to $}{a$1to}x;
-
-    # possessive adjectives
-    # -in → -i
-    return $word
-        if $word =~ s{ (?<= i ) n $}{}x;
 
     return $word;
 }
@@ -99,8 +100,7 @@ sub stem_aggressive {
     # protected words
     return $stem
         if $protect{root}{$stem}
-        || $protect{correlative}{$stem}
-        || $protect{aggressive}{$stem};
+        || $protect{correlative}{$stem};
 
     # remove final suffix
     $stem =~ s{ [aeio] $}{}x;

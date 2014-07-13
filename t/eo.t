@@ -2,13 +2,9 @@ use utf8;
 use strict;
 use warnings;
 use open qw( :encoding(UTF-8) :std );
-use Test::More tests => 203;
+use Test::More tests => 104;
 use Lingua::Stem::Patch::EO qw( stem );
 
-is stem('la'),          'la',        'article: la';
-is stem('kaj'),         'kaj',       'conjunction: kaj';
-is stem('mi'),          'mi',        'personal pronoun';
-is stem('min'),         'mi',        '-n accusative personal pronoun';
 is stem('mia'),         'mia',       '-a possesive adjective';
 is stem('miaj'),        'mia',       '-aj plural possesive adjective';
 is stem('mian'),        'mia',       '-an accusative possesive adjective';
@@ -112,20 +108,4 @@ is stem('l’'),          'la',        'l’ with typographic apostrophe';
 is stem("l'"),          'la',        "l' with typographic apostrophe";
 is stem('un’'),         'unu',       'un’ with typographic apostrophe';
 is stem("un'"),         'unu',       "un' with typewriter apostrophe";
-is stem('unuj'),        'unu',      'plural unu';
-
-for my $start (qw{ ki ti i ĉi neni }) {
-    for my $end (qw{ a al am e el es o om u }) {
-        my $word = $start . $end;
-        is stem($word), $word, "correlative: $word";
-
-        if ($end eq 'a' || $end eq 'o' || $end eq 'u') {
-            is stem($word . 'j'),  $word, "correlative: -${end}j";
-            is stem($word . 'n'),  $word, "correlative: -${end}n";
-            is stem($word . 'jn'), $word, "correlative: -${end}jn";
-        }
-        elsif ($end eq 'e') {
-            is stem($word . 'n'), $word, 'correlative: -en';
-        }
-    }
-}
+is stem('unuj'),        'unu',       'plural unu';
