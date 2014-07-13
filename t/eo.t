@@ -2,10 +2,10 @@ use utf8;
 use strict;
 use warnings;
 use open qw( :encoding(UTF-8) :std );
-use Test::More tests => 104;
+use Test::More tests => 154;
 use Lingua::Stem::Patch::EO qw( stem );
 
-is stem('kaj'),         'kaj',       'conjunction';
+is stem('kaj'),         'kaj',       'conjunction: kaj';
 is stem('mi'),          'mi',        'personal pronoun';
 is stem('min'),         'mi',        '-n accusative personal pronoun';
 is stem('mia'),         'mia',       '-a possesive adjective';
@@ -109,3 +109,10 @@ is stem('hund’'),       'hundo',     '-’ noun with typographic apostrophe';
 is stem("hund'"),       'hundo',     "-' noun with typewriter apostrophe";
 is stem('un’'),         'unu',       '-’ unu with typographic apostrophe';
 is stem("un'"),         'unu',       "-' unu with typewriter apostrophe";
+
+for my $start (qw{ ki ti i ĉi neni }) {
+    for my $end (qw{ a al am e en el es o om u }) {
+        my $word = $start . $end;
+        is stem($word), $word, "correlative: $word";
+    }
+}
