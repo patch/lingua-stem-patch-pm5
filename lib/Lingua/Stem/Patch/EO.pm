@@ -7,9 +7,19 @@ use warnings;
 use parent 'Exporter';
 
 our $VERSION   = '0.01';
-our @EXPORT_OK = qw( stem stem_eo );
+our @EXPORT_OK = qw( stem stem_eo stem_aggressive stem_eo_aggressive );
 
-*stem_eo = \&stem;
+*stem_eo            = \&stem;
+*stem_eo_aggressive = \&stem_aggressive;
+
+my %protect = (
+    particple => { map { $_ => 1 } qw(
+        esperanto ganto horizonto kanto monto ponto rakonto
+    ) },
+    aggressive => { map { $_ => 1 } qw(
+        ci ĝi ili li mi ni oni si ŝi vi
+    ) },
+);
 
 sub stem {
     my ($word) = @_;
@@ -47,16 +57,8 @@ sub stem {
     return $word
         if $word =~ s{ ad [io] $}{i}x;
 
-    # exceptions: not participle nouns
-    return $word if $word =~ m{ \b (?:
-        esperanto
-        | ganto
-        | horizonto
-        | kanto
-        | monto
-        | ponto
-        | rakonto
-    ) $ }x;
+    # protected: participle nouns
+    return $word if $protect{participle}{$word};
 
     # participle nouns
     # -into -anto -onto → -anto
@@ -70,6 +72,18 @@ sub stem {
         if $word =~ s{ (?<= i ) n $}{}x;
 
     return $word;
+}
+
+sub stem_aggressive {
+    my $stem = stem(shift);
+
+    # protected words
+    return $stem if $protect{aggressive}{$stem};
+
+    # remove final suffix
+    $stem =~ s{ [aeio] $}{}x;
+
+    return $stem;
 }
 
 1;
@@ -97,12 +111,14 @@ This document describes Lingua::Stem::Patch::EO v0.01.
 
 =head1 DESCRIPTION
 
-A stemmer for the universal language Esperanto. This is a new project under
-active development and the current stemming algorithm is likely to change.
+Light and aggressive stemmers for the universal language Esperanto. This is a
+new project under active development and the current stemming algorithm is
+likely to change.
 
-This module provides the C<stem> and C<stem_eo> functions, which are synonymous
-and can optionally be exported. They accept a single word and return a single
-stem.
+This module provides the C<stem> and C<stem_eo> functions for the light stemmer,
+which are synonymous and can optionally be exported, plus C<stem_aggressive> and
+C<stem_eo_aggressive> functions for the aggressive stemmer. They accept a
+character string for a word and return a character string for its stem.
 
 =head1 SEE ALSO
 

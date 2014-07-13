@@ -11,4 +11,6 @@ README
 t/00-load.t
 t/01-stemmer.t
 t/eo.t
+t/eo-aggressive.t
 t/io.t
+t/io-aggressive.t
