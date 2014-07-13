@@ -2,11 +2,12 @@ use utf8;
 use strict;
 use warnings;
 use open qw( :encoding(UTF-8) :std );
-use Test::More tests => 200;
+use Test::More tests => 203;
 use Lingua::Stem::Patch::EO qw( stem_aggressive );
 
 *stem = \&stem_aggressive;
 
+is stem('la'),          'la',        'article: la';
 is stem('kaj'),         'kaj',       'conjunction';
 is stem('mi'),          'mi',        'personal pronoun';
 is stem('min'),         'mi',        '-n accusative personal pronoun';
@@ -109,8 +110,10 @@ is stem('esperanto'),   'esperant', 'esperanto: keep -anto';
 is stem('kanto'),       'kant',     'kanto: keep -anto';
 is stem('hund’'),       'hund',     '-’ noun with typographic apostrophe';
 is stem("hund'"),       'hund',     "-' noun with typewriter apostrophe";
-is stem('un’'),         'unu',      '-’ unu with typographic apostrophe';
-is stem("un'"),         'unu',      "-' unu with typewriter apostrophe";
+is stem('l’'),          'la',       'l’ with typographic apostrophe';
+is stem("l'"),          'la',       "l' with typographic apostrophe";
+is stem('un’'),         'unu',      'un’ with typographic apostrophe';
+is stem("un'"),         'unu',      "un' with typewriter apostrophe";
 is stem('unuj'),        'unu',      'plural unu';
 
 for my $start (qw{ ki ti i ĉi neni }) {

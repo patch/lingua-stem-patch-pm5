@@ -18,7 +18,7 @@ my %protect = (
         map { $start . $_ } qw( a al am e el es o om u )
     } qw( ki ti i ĉi neni ) },
     root => { map { $_ => 1 } qw(
-        kaj
+        kaj la
     ) },
     participle => { map { $_ => 1 } qw(
         esperanto ganto horizonto kanto monto ponto rakonto
@@ -32,6 +32,9 @@ sub stem {
     my ($word) = @_;
 
     $word = lc $word;
+
+    # l’ l' → la
+    $word =~ s{ (?<= ^ l ) ['’] $}{a}x;
 
     # protected: basic roots
     return $word if $protect{root}{$word};
@@ -95,8 +98,9 @@ sub stem_aggressive {
 
     # protected words
     return $stem
-        if $protect{aggressive}{$stem}
-        || $protect{correlative}{$stem};
+        if $protect{root}{$stem}
+        || $protect{correlative}{$stem}
+        || $protect{aggressive}{$stem};
 
     # remove final suffix
     $stem =~ s{ [aeio] $}{}x;
