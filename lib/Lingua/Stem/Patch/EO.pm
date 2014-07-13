@@ -36,19 +36,19 @@ sub stem {
     # protected: basic roots
     return $word if $protect{root}{$word};
 
+    # un’ un' unuj → unu
+    return 'unu'
+        if $word =~ m{^ un (?: ['’] | uj ) $}x;
+
     # nouns and adjectives
     # -oj -on -ojn → o
     # -aj -an -ajn → a
     $word =~ s{ (?<= [aou] ) (?: [jn] | jn ) $}{}x;
 
-    # un’ un' → unu
-    return $word
-        if $word =~ s{ (?<= \b un ) [’'] $}{u}x;
-
     # -’ -' → -o
     $word =~ s{ [’'] $}{o}x;
 
-    # -en correlatives
+    # correlatives: -en → -e
     $word =~ s{^ ( (?: [ĉkt] | nen )? ie ) n $}{$1}x;
 
     # protected: correlatives
