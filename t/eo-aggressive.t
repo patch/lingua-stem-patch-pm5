@@ -2,7 +2,7 @@ use utf8;
 use strict;
 use warnings;
 use open qw( :encoding(UTF-8) :std );
-use Test::More tests => 154;
+use Test::More tests => 199;
 use Lingua::Stem::Patch::EO qw( stem_aggressive );
 
 *stem = \&stem_aggressive;
@@ -113,8 +113,17 @@ is stem('un’'),         'unu',      '-’ unu with typographic apostrophe';
 is stem("un'"),         'unu',      "-' unu with typewriter apostrophe";
 
 for my $start (qw{ ki ti i ĉi neni }) {
-    for my $end (qw{ a al am e en el es o om u }) {
+    for my $end (qw{ a al am e el es o om u }) {
         my $word = $start . $end;
         is stem($word), $word, "correlative: $word";
+
+        if ($end eq 'a' || $end eq 'o' || $end eq 'u') {
+            is stem($word . 'j'),  $word, "correlative: -${end}j";
+            is stem($word . 'n'),  $word, "correlative: -${end}n";
+            is stem($word . 'jn'), $word, "correlative: -${end}jn";
+        }
+        elsif ($end eq 'e') {
+            is stem($word . 'n'), $word, 'correlative: -en';
+        }
     }
 }

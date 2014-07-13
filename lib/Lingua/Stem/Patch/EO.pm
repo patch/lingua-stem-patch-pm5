@@ -15,7 +15,7 @@ our @EXPORT_OK = qw( stem stem_eo stem_aggressive stem_eo_aggressive );
 my %protect = (
     correlative => { map { $_ => 1 } map {
         my $start = $_;
-        map { $start . $_ } qw( a al am e en el es o om u )
+        map { $start . $_ } qw( a al am e el es o om u )
     } qw( ki ti i ĉi neni ) },
     root => { map { $_ => 1 } qw(
         kaj
@@ -39,7 +39,7 @@ sub stem {
     # nouns and adjectives
     # -oj -on -ojn → o
     # -aj -an -ajn → a
-    $word =~ s{ (?<= [ao] ) (?: [jn] | jn ) $}{}x;
+    $word =~ s{ (?<= [aou] ) (?: [jn] | jn ) $}{}x;
 
     # un’ un' → unu
     return $word
@@ -47,6 +47,9 @@ sub stem {
 
     # -’ -' → -o
     $word =~ s{ [’'] $}{o}x;
+
+    # -en correlatives
+    $word =~ s{^ ( (?: [ĉkt] | nen )? ie ) n $}{$1}x;
 
     # protected: correlatives
     return $word if $protect{correlative}{$word};
