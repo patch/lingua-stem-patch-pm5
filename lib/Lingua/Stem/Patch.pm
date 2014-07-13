@@ -7,7 +7,7 @@ use Carp;
 use Moo;
 use namespace::clean;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 my @languages   = qw( eo io );
 my %is_language = map { $_ => 1 } @languages;
@@ -71,7 +71,7 @@ Lingua::Stem::Patch - Patch stemmers
 
 =head1 VERSION
 
-This document describes Lingua::Stem::Patch v0.01.
+This document describes Lingua::Stem::Patch v0.02.
 
 =head1 SYNOPSIS
 

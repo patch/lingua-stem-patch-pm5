@@ -8,7 +8,7 @@ Lingua::Stem::Patch - Patch stemmers
 
 # VERSION
 
-This document describes Lingua::Stem::Patch v0.01.
+This document describes Lingua::Stem::Patch v0.02.
 
 # SYNOPSIS
 
@@ -57,6 +57,15 @@ algorithms are likely to change.
 
     # change language
     $stemmer->language($language);
+    ```
+
+- aggressive
+
+    By default a light stemmer will be used, but when `aggressive` is set to true,
+    an aggressive stemmer will be used instead.
+
+    ```perl
+    $stemmer->aggressive(1);
     ```
 
 ## Methods
