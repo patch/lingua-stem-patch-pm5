@@ -2,7 +2,7 @@ use utf8;
 use strict;
 use warnings;
 use open qw( :encoding(UTF-8) :std );
-use Test::More tests => 105;
+use Test::More tests => 107;
 use Lingua::Stem::Patch::EO qw( stem );
 
 is stem('mia'),         'mia',       '-a possesive adjective';
@@ -93,7 +93,9 @@ is stem('laboradi'),    'labori',    '-adi';
 is stem('laboradas'),   'labori',    '-adas';
 is stem('laborado'),    'labori',    '-ado';
 is stem('eklabori'),    'labori',    'ek-';
+is stem('eksciti'),     'eksciti',   'ek- exception';
 is stem('ellabori'),    'labori',    'el-';
+is stem('elefanto'),    'elefanto',  'el- exception';
 is stem('laboranto'),   'laboranto', '-anto';
 is stem('laborinto'),   'laboranto', '-into';
 is stem('laboronto'),   'laboranto', '-onto';

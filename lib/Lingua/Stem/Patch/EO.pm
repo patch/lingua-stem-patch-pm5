@@ -26,8 +26,21 @@ my %protect = (
         ĵus nun plu tuj
         amen bis boj fi ha he ho hu hura nu ve
     ) },
-    noun => { map { $_ => 1 } qw(
-        esperanto ganto horizonto kanto monto ponto rakonto
+    simple => { map { my $root = $_; map { $root . $_ => 1 } qw( a e i o ) } qw(
+        abrikot absint arogant artrit azot balustrad bant bat biskvit blat boat
+        bot briliant cit ĉokolad dat degrad delikat diamant diskont dorlot dot
+        ekscit elefant ermit etat evit flat font frat front frot gad gant genot
+        glad glat glit grad granat granit grat grenad grot hepat hipokrit hont
+        horizont imit incit iniciat intermit invit kalikot kamlot kant kapot
+        karot kat klimat komitat kompat konfit konsonant konstant konstat
+        kontant kot krad kravat kvant kvit lad lekant leŭtenant limonad lit lot
+        markot marmot mat medit merit milit miozot monat mont muskat not oblat
+        palat parad parazit pat perlamot pilot pint pirit plad plant plat plot
+        pont pot predikat privat profit rabat rabot rad rakont rat renkont rilat
+        rot sabat salat sat ŝat skarlat soldat spat spirit spit sprit stat ŝtat
+        strat subit sublimat svat ŝvit terebint tint trikot trot universitat
+        vant vat vizit volont zenit
+        almilit bofrat ciferplat esperant malŝat manplat
     ) },
 );
 
@@ -37,7 +50,8 @@ sub stem {
     $word = lc $word;
 
     # standalone roots
-    return $word if $protect{root}{$word};
+    return $word
+        if $protect{root}{$word};
 
     # l’ l' → la
     return 'la'
@@ -64,29 +78,33 @@ sub stem {
     $word =~ s{^ ( (?: [ĉkt] | nen )? ie ) n $}{$1}x;
 
     # correlative roots
-    return $word if $protect{correlative}{$word};
+    return $word
+        if $protect{correlative}{$word};
 
     # verbs: -is -as -os -us -u → -i
     $word =~ s{ (?: [aiou] s | u ) $}{i}x;
-
-    # compound verbs:
-    # -inti -anti -onti -iti -ati -oti → -i
-    # -inte -ante -onte -ite -ate -ote → -i
-    # -inta -anta -onta -ita -ata -ota → -i
-    $word =~ s{ (?: [aio] n? t ) [aei] $}{i}x;
 
     # accusative adverbs: -en → -o
     $word =~ s{ en $}{o}x;
 
     # lexical aspect: ek- el-
-    $word =~ s{^ e [kl] }{}x;
+    $word =~ s{^ ek (?! scit  ) }{}x;
+    $word =~ s{^ el (?! efant ) }{}x;
+
+    # simple words: root plus single suffix
+    return $word
+        if $protect{simple}{$word};
 
     # imperfective verbs & action nouns: -adi -ado → -i
     return $word
         if $word =~ s{ ad [io] $}{i}x;
 
-    # non-participle nouns
-    return $word if $protect{noun}{$word};
+    # compound verbs:
+    # -inti -anti -onti -iti -ati -oti → -i
+    # -inte -ante -onte -ite -ate -ote → -i
+    # -inta -anta -onta -ita -ata -ota → -i
+    return $word
+        if $word =~ s{ (?: [aio] n? t ) [aei] $}{i}x;
 
     # participle nouns:
     # -into -anto -onto → -anto

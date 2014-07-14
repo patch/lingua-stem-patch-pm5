@@ -2,7 +2,7 @@ use utf8;
 use strict;
 use warnings;
 use open qw( :encoding(UTF-8) :std );
-use Test::More tests => 105;
+use Test::More tests => 107;
 use Lingua::Stem::Patch::EO qw( stem_aggressive );
 
 *stem = \&stem_aggressive;
@@ -95,7 +95,9 @@ is stem('laboradi'),    'labor',    '-adi';
 is stem('laboradas'),   'labor',    '-adas';
 is stem('laborado'),    'labor',    '-ado';
 is stem('eklabori'),    'labor',    'ek-';
+is stem('eksciti'),     'ekscit',   'ek- exception';
 is stem('ellabori'),    'labor',    'el-';
+is stem('elefanto'),    'elefant',  'el- exception';
 is stem('laboranto'),   'laborant', '-anto';
 is stem('laborinto'),   'laborant', '-into';
 is stem('laboronto'),   'laborant', '-onto';
