@@ -116,17 +116,25 @@ sub stem {
 }
 
 sub stem_aggressive {
-    my $stem = stem(shift);
+    my $word = stem(shift);
+    my $copy = $word;
 
     # protected words
-    return $stem
-        if $protect{root}{$stem}
-        || $protect{correlative}{$stem};
+    return $word
+        if $protect{root}{$word}
+        || $protect{correlative}{$word};
 
     # remove final suffix
-    $stem =~ s{ [aeio] $}{}x;
+    $word =~ s{ [aeio] $}{}x;
 
-    return $stem;
+    return $word
+        if $protect{simple}{$copy};
+
+    # remove suffix for participle nouns:
+    # -int- -ant- -ont- -it- -at- -ot-
+    $word =~ s{ [aio] n? t $}{}x;
+
+    return $word;
 }
 
 1;
