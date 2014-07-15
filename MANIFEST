@@ -15,3 +15,4 @@ t/eo-aggressive.t
 t/eo-roots.t
 t/io.t
 t/io-aggressive.t
+t/io-roots.t

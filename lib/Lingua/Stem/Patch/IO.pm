@@ -12,12 +12,24 @@ our @EXPORT_OK = qw( stem stem_io stem_aggressive stem_io_aggressive );
 *stem_io            = \&stem;
 *stem_io_aggressive = \&stem_aggressive;
 
+my %protect = (
+    root => { map { $_ => 1 } qw(
+        la el il li lu me ni ol on su tu vi vu
+    ) },
+);
+
 sub stem {
     my $word = lc shift;
 
     for ($word) {
+        # standalone roots
+        last if $protect{root}{$word};
+
         # nouns: -on -i -in → -o
         last if s{ (?: on | in? ) $}{o}x;
+
+        # remove -u from pronouns: elu ilu olu onu
+        last if s{ (?<= ^ [eio] l | on ) u $}{}x;
 
         # pariciple adjectives: -inta -anta -onta -ita -ata -ota → -ar
         last if s{ (?: [aio] n? t ) a $}{ar}x;
@@ -36,10 +48,14 @@ sub stem_aggressive {
     my $word = stem(shift);
 
     for ($word) {
-        last if $word eq 'la';
+        # standalone roots
+        last if $protect{root}{$word};
 
         # remove final suffix
         s{ (?: [aeo] | ar ) $}{}x;
+
+        # remove -u from pronouns: elu ilu olu onu
+        last if s{ (?<= ^ [eio] l | on ) u $}{}x;
     }
 
     return $word;
