@@ -19,11 +19,14 @@ sub stem {
         # nouns: -on -i -in → -o
         last if s{ (?: on | in? ) $}{o}x;
 
-        # verbs: -ir -or -is -as -os -us -ez → -ar
-        last if s{ (?: [io] r | [aiou] s | ez ) $}{ar}x;
-
         # pariciple adjectives: -inta -anta -onta -ita -ata -ota → -ar
         last if s{ (?: [aio] n? t ) a $}{ar}x;
+
+        # verbs: -ir -or -is -as -os -us -ez → -ar
+        s{ (?: [io] r | [aiou] s | ez ) $}{ar}x;
+
+        # remove -ab- from verbs
+        s{ ab (?= ar $ ) }{}x;
     }
 
     return $word;
