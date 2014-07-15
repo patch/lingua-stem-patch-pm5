@@ -2,7 +2,7 @@ use utf8;
 use strict;
 use warnings;
 use open qw( :encoding(UTF-8) :std );
-use Test::More tests => 14;
+use Test::More tests => 21;
 use Lingua::Stem::Patch::IO qw( stem_aggressive );
 
 *stem = \&stem_aggressive;
@@ -21,3 +21,8 @@ is stem('laboras'), 'labor', 'present indicative verb';
 is stem('laboros'), 'labor', 'future indicative verb';
 is stem('laborus'), 'labor', 'conditional verb';
 is stem('laborez'), 'labor', 'jussive verb';
+is stem('labore'),  'labor', 'adverb';
+
+for my $suffix (qw{ inta anta onta ita ata ota }) {
+    is stem('labor' . $suffix), 'labor', "-$suffix participle";
+}

@@ -16,11 +16,14 @@ sub stem {
     my $word = lc shift;
 
     for ($word) {
-        # nouns: -on -i -in
+        # nouns: -on -i -in → -o
         last if s{ (?: on | in? ) $}{o}x;
 
-        # verbs: -ir -or -is -as -os -us -ez
-        last if s{ (?: [io]r | [aiou]s | ez ) $}{ar}x;
+        # verbs: -ir -or -is -as -os -us -ez → -ar
+        last if s{ (?: [io] r | [aiou] s | ez ) $}{ar}x;
+
+        # pariciple adjectives: -inta -anta -onta -ita -ata -ota → -ar
+        last if s{ (?: [aio] n? t ) a $}{ar}x;
     }
 
     return $word;
