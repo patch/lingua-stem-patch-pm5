@@ -2,11 +2,12 @@ use utf8;
 use strict;
 use warnings;
 use open qw( :encoding(UTF-8) :std );
-use Test::More tests => 13;
+use Test::More tests => 14;
 use Lingua::Stem::Patch::IO qw( stem_aggressive );
 
 *stem = \&stem_aggressive;
 
+is stem('la'),      'la',    'article';
 is stem('hundo'),   'hund',  'noun';
 is stem('hundi'),   'hund',  'plural noun';
 is stem('hundon'),  'hund',  'accusative noun';

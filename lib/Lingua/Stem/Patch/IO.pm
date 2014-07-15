@@ -29,8 +29,12 @@ sub stem {
 sub stem_aggressive {
     my $word = stem(shift);
 
-    # remove final suffix
-    $word =~ s{ (?: [aeo] | ar ) $}{}x;
+    for ($word) {
+        last if $word eq 'la';
+
+        # remove final suffix
+        s{ (?: [aeo] | ar ) $}{}x;
+    }
 
     return $word;
 }
