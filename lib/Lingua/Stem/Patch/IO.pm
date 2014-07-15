@@ -13,28 +13,26 @@ our @EXPORT_OK = qw( stem stem_io stem_aggressive stem_io_aggressive );
 *stem_io_aggressive = \&stem_aggressive;
 
 sub stem {
-    my ($word) = @_;
+    my $word = lc shift;
 
-    $word = lc $word;
+    for ($word) {
+        # nouns: -on -i -in
+        last if s{ (?: on | in? ) $}{o}x;
 
-    # -on -i -in
-    return $word
-        if $word =~ s{ (?: on | in? ) $}{o}x;
-
-    # -ir -or -is -as -os -us -ez
-    return $word
-        if $word =~ s{ (?: [io]r | [aiou]s | ez ) $}{ar}x;
+        # verbs: -ir -or -is -as -os -us -ez
+        last if s{ (?: [io]r | [aiou]s | ez ) $}{ar}x;
+    }
 
     return $word;
 }
 
 sub stem_aggressive {
-    my $stem = stem(shift);
+    my $word = stem(shift);
 
     # remove final suffix
-    $stem =~ s{ (?: [aeo] | ar ) $}{}x;
+    $word =~ s{ (?: [aeo] | ar ) $}{}x;
 
-    return $stem;
+    return $word;
 }
 
 1;

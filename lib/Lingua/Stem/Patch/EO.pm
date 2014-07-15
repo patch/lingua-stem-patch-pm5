@@ -45,72 +45,64 @@ my %protect = (
 );
 
 sub stem {
-    my ($word) = @_;
+    my $word = lc shift;
 
-    $word = lc $word;
+    for ($word) {
+        # standalone roots
+        last if $protect{root}{$word};
 
-    # standalone roots
-    return $word
-        if $protect{root}{$word};
+        # l’ l' → la
+        last if s{ (?<= ^ l ) [’'] $}{a}x;
 
-    # l’ l' → la
-    return 'la'
-        if $word =~ m{^ l [’'] $}x;
+        # un’ un' unuj → unu
+        last if s{ (?<= ^ un  ) [’'] $}{u}x;
+        last if s{ (?<= ^ unu ) j    $}{}x;
 
-    # un’ un' unuj → unu
-    return 'unu'
-        if $word =~ m{^ un (?: [’'] | uj ) $}x;
+        # -’ -' → -o
+        s{ [’'] $}{o}x;
 
-    # -’ -' → -o
-    $word =~ s{ [’'] $}{o}x;
+        # nouns, adjectives, -u correlatives:
+        # -oj -on -ojn → o
+        # -aj -an -ajn → a
+        # -uj -un -ujn → u
+        s{ (?<= [aou] ) (?: [jn] | jn ) $}{}x;
 
-    # nouns, adjectives, -u correlatives
-    # -oj -on -ojn → o
-    # -aj -an -ajn → a
-    # -uj -un -ujn → u
-    $word =~ s{ (?<= [aou] ) (?: [jn] | jn ) $}{}x;
+        # correlatives: -en → -e
+        s{^ ( (?: [ĉkt] | nen )? ie ) n $}{$1}x;
 
-    # accusative pronouns: -in → -i
-    return $word
-        if $word =~ s{ (?<= i ) n $}{}x;
+        # correlative roots
+        last if $protect{correlative}{$word};
 
-    # correlatives: -en → -e
-    $word =~ s{^ ( (?: [ĉkt] | nen )? ie ) n $}{$1}x;
+        # accusative pronouns: -in → -i
+        last if s{ (?<= i ) n $}{}x;
 
-    # correlative roots
-    return $word
-        if $protect{correlative}{$word};
+        # accusative adverbs: -en → -o
+        s{ en $}{o}x;
 
-    # verbs: -is -as -os -us -u → -i
-    $word =~ s{ (?: [aiou] s | u ) $}{i}x;
+        # verbs: -is -as -os -us -u → -i
+        s{ (?: [aiou] s | u ) $}{i}x;
 
-    # accusative adverbs: -en → -o
-    $word =~ s{ en $}{o}x;
+        # lexical aspect: ek- el-
+        s{^ ek (?! scit  ) }{}x;
+        s{^ el (?! efant ) }{}x;
 
-    # lexical aspect: ek- el-
-    $word =~ s{^ ek (?! scit  ) }{}x;
-    $word =~ s{^ el (?! efant ) }{}x;
+        # simple words: root plus single suffix
+        last if $protect{simple}{$word};
 
-    # simple words: root plus single suffix
-    return $word
-        if $protect{simple}{$word};
+        # imperfective verbs & action nouns: -adi -ado → -i
+        last if s{ ad [io] $}{i}x;
 
-    # imperfective verbs & action nouns: -adi -ado → -i
-    return $word
-        if $word =~ s{ ad [io] $}{i}x;
+        # compound verbs:
+        # -inti -anti -onti -iti -ati -oti → -i
+        # -inte -ante -onte -ite -ate -ote → -i
+        # -inta -anta -onta -ita -ata -ota → -i
+        last if s{ (?: [aio] n? t ) [aei] $}{i}x;
 
-    # compound verbs:
-    # -inti -anti -onti -iti -ati -oti → -i
-    # -inte -ante -onte -ite -ate -ote → -i
-    # -inta -anta -onta -ita -ata -ota → -i
-    return $word
-        if $word =~ s{ (?: [aio] n? t ) [aei] $}{i}x;
-
-    # participle nouns:
-    # -into -anto -onto → -anto
-    # -ito  -ato  -oto  → -ato
-    return $word
-        if $word =~ s{ [aio] ( n? ) to $}{a$1to}x;
+        # participle nouns:
+        # -into -anto -onto → -anto
+        # -ito  -ato  -oto  → -ato
+        last if s{ [aio] ( n? ) to $}{a$1to}x;
+    }
 
     return $word;
 }
@@ -119,20 +111,20 @@ sub stem_aggressive {
     my $word = stem(shift);
     my $copy = $word;
 
-    # protected words
-    return $word
-        if $protect{root}{$word}
-        || $protect{correlative}{$word};
+    for ($word) {
+        # protected words
+        last if $protect{root}{$word}
+             || $protect{correlative}{$word};
 
-    # remove final suffix
-    $word =~ s{ [aeio] $}{}x;
+        # remove final suffix
+        s{ [aeio] $}{}x;
 
-    return $word
-        if $protect{simple}{$copy};
+        last if $protect{simple}{$copy};
 
-    # remove suffix for participle nouns:
-    # -int- -ant- -ont- -it- -at- -ot-
-    $word =~ s{ [aio] n? t $}{}x;
+        # remove suffix for participle nouns:
+        # -int- -ant- -ont- -it- -at- -ot-
+        s{ [aio] n? t $}{}x;
+    }
 
     return $word;
 }
