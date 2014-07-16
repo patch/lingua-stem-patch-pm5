@@ -7,7 +7,7 @@ use Carp;
 use Moo;
 use namespace::clean;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 my @languages   = qw( eo io );
 my %is_language = map { $_ => 1 } @languages;
@@ -67,11 +67,11 @@ __END__
 
 =head1 NAME
 
-Lingua::Stem::Patch - Patch stemmers
+Lingua::Stem::Patch - Patch stemmers for Esperanto and Ido
 
 =head1 VERSION
 
-This document describes Lingua::Stem::Patch v0.02.
+This document describes Lingua::Stem::Patch v0.03.
 
 =head1 SYNOPSIS
 

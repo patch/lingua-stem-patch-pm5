@@ -1,5 +1,11 @@
 Revision history for Perl module Lingua::Stem::Patch
 
+0.03 2014-07-16
+ - Added participle stemming exceptions for words in the Fundamento #eo
+ - Added participle suffix removal instead of normalization when aggressive #eo
+ - Added stemming exceptions for article and pronouns #io
+ - Added stemming rules for pronouns, participle adjectives, -ab- verbs #io
+
 0.02 2014-07-13
  - Added aggressive stemmers which remove the entire suffix #eo #io
  - Added stemming exceptions for all standalone root words #eo
