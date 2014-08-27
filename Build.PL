@@ -14,9 +14,10 @@ my $builder = Module::Build->new(
         'Pod::Man' => '2.04',
     },
     test_requires => {
-        'open'       => 0,
-        'English'    => 0,
-        'Test::More' => '0.82',
+        'open'         => 0,
+        'English'      => 0,
+        'String::Dump' => '0.05',
+        'Test::More'   => '0.82',
     },
     requires => {
         'perl'             => '5.8.1',
