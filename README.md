@@ -8,7 +8,7 @@ Lingua::Stem::Patch - Patch stemmers for Esperanto and Ido
 
 # VERSION
 
-This document describes Lingua::Stem::Patch v0.03.
+This document describes Lingua::Stem::Patch v0.03_1.
 
 # SYNOPSIS
 

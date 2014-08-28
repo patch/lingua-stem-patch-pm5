@@ -6,7 +6,7 @@ use strict;
 use warnings;
 use parent 'Exporter';
 
-our $VERSION   = '0.03';
+our $VERSION   = '0.03_1';
 our @EXPORT_OK = qw( stem stem_pl );
 
 *stem_pl = \&stem;
@@ -181,7 +181,7 @@ Lingua::Stem::Patch::PL - Polish stemmer
 
 =head1 VERSION
 
-This document describes Lingua::Stem::Patch::PL v0.03.
+This document describes Lingua::Stem::Patch::PL v0.03_1.
 
 =head1 SYNOPSIS
 
