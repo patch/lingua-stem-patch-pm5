@@ -43,6 +43,7 @@ algorithms are likely to change.
         ┌───────────┬────┐
         │ Esperanto │ eo │
         │ Ido       │ io │
+        │ Polish    │ pl │
         └───────────┴────┘
 
     They are in the two-letter ISO 639-1 format and are case-insensitive but are

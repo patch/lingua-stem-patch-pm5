@@ -9,7 +9,7 @@ use namespace::clean;
 
 our $VERSION = '0.03';
 
-my @languages   = qw( eo io );
+my @languages   = qw( eo io pl );
 my %is_language = map { $_ => 1 } @languages;
 
 has language => (
@@ -106,6 +106,7 @@ The following language codes are currently supported.
     ┌───────────┬────┐
     │ Esperanto │ eo │
     │ Ido       │ io │
+    │ Polish    │ pl │
     └───────────┴────┘
 
 They are in the two-letter ISO 639-1 format and are case-insensitive but are

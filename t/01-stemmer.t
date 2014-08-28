@@ -13,7 +13,7 @@ can_ok $stemmer, qw( stem language languages );
 
 is $stemmer->language, 'eo', 'language read-accessor';
 
-my @langs = qw( eo io );
+my @langs = qw( eo io pl );
 my $langs = @langs;
 is_deeply [$stemmer->languages],            \@langs, 'object method list';
 is_deeply [Lingua::Stem::Patch->languages], \@langs, 'class method list';
