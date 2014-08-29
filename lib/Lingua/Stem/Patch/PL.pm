@@ -210,9 +210,13 @@ in a L<Python script|https://github.com/Tutanchamon/pl_stemmer>.
 
 Nick Patch <patch@cpan.org>
 
+This module is brought to you by L<Shutterstock|http://www.shutterstock.com/>.
+Additional open source projects from Shutterstock can be found at
+L<code.shutterstock.com|http://code.shutterstock.com/>.
+
 =head1 COPYRIGHT AND LICENSE
 
-© 2014 Nick Patch
+© 2014 Shutterstock, Inc.
 
 This library is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
