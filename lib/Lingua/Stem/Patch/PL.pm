@@ -115,8 +115,9 @@ sub remove_verb {
 
     if ($length > 3) {
         return $word if $word =~ s{ (?:
-            ąc | em
+            ąc
             | a[ćmł]                     # -ać -am -ał
+            | e[ćm]                      # -eć -em
             | i[ćł]                      # -ić -ił
             | (?<= a    ) j              # -aj                 → -a
             | (?<= [ae] ) (?: sz | ść )  # -asz -aść -esz -eść → -a -e

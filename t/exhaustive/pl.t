@@ -157,7 +157,7 @@ czas	czas
 ta	ta
 który	któr
 chce	chce
-powiedzieć	powiedzieć
+powiedzieć	powiedz
 chodź	chodź
 dobry	dobr
 mną	mną
@@ -232,7 +232,7 @@ wie	wie
 znaczy	znacz
 wygląda	wygląd
 dzieje	dzieje
-mieć	mieć
+mieć	mi
 ile	ile
 iść	iść
 potem	pot
@@ -282,7 +282,7 @@ jaki	jaki
 mamo	mamo
 kilka	kilk
 przykro	przykro
-wiedzieć	wiedzieć
+wiedzieć	wiedz
 ojciec	ojciec
 widzisz	widzisz
 zbyt	zbyt
@@ -493,7 +493,7 @@ byli	byli
 zostaw	zostaw
 wiedziałem	wiedz
 jedna	jedn
-widzieć	widzieć
+widzieć	widz
 swoim	swoim
 kobiety	kobiet
 uważaj	uważ
@@ -882,7 +882,7 @@ bracie	bra
 drugiej	drug
 przyjaciół	przyjació
 otwórz	otwórz
-myśleć	myśleć
+myśleć	myśl
 chwileczkę	chwileczk
 doktor	doktor
 najlepszy	lep
@@ -1022,7 +1022,7 @@ rany	rany
 prawdziwe	prawdziwe
 takiej	taki
 jakiegoś	jakiegoś
-umrzeć	umrzeć
+umrzeć	umrz
 złego	złego
 okazji	okazj
 gotowa	got
@@ -1089,7 +1089,7 @@ rodzinę	rodzin
 szczęśliwy	szczęśliw
 najlepsze	lep
 widzi	widz
-zrozumieć	zrozumieć
+zrozumieć	zrozum
 zajmę	zajm
 zrobiła	zrobił
 żony	żony
@@ -1202,7 +1202,7 @@ bob	bob
 statek	stat
 zjeść	zje
 coraz	coraz
-dowiedzieć	dowiedzieć
+dowiedzieć	dowiedz
 ładnie	ładn
 stoi	stoi
 ostrożnie	ostrożn
@@ -1313,7 +1313,7 @@ matką	matk
 rodziców	rodzic
 kolejny	kolejn
 jakbym	jak
-patrzeć	patrzeć
+patrzeć	patrz
 mogłam	mogł
 jedyną	jedyn
 ból	ból
@@ -1346,7 +1346,7 @@ san	san
 sytuacji	sytu
 drugie	drug
 wizja	wizj
-usłyszeć	usłyszeć
+usłyszeć	usłysz
 zajmie	zajm
 żebyśmy	żebyśm
 powiedzieli	powiedziel
@@ -1504,7 +1504,7 @@ t	t
 niezłe	niezłe
 zasady	zasad
 żyjesz	żyj
-zapomnieć	zapomnieć
+zapomnieć	zapomn
 mogłabym	mogł
 jakiej	jaki
 siostry	siostr
@@ -1513,7 +1513,7 @@ zapłacić	zapłac
 matkę	matk
 danny	dann
 mocy	mocy
-siedzieć	siedzieć
+siedzieć	siedz
 niezła	niezł
 staram	star
 zdobyć	zdobyć
@@ -1639,7 +1639,7 @@ mężczyzn	mężczyzn
 mogłabyś	mogłabyś
 wobec	wobec
 rana	rana
-spojrzeć	spojrzeć
+spojrzeć	spojrz
 szalony	szalon
 wyjdzie	wyjdz
 nasi	nasi
@@ -1820,7 +1820,7 @@ długi	dług
 idą	idą
 iż	iż
 pozwoli	pozwol
-lecieć	lecieć
+lecieć	leci
 korekta	kor
 ładny	ładn
 piłkę	piłk
@@ -2007,7 +2007,7 @@ umysł	umys
 podróży	podróż
 gadać	gad
 nóż	nóż
-pomyśleć	pomyśleć
+pomyśleć	pomyśl
 andy	andy
 mężem	męż
 różnych	różn
@@ -2041,7 +2041,7 @@ słodki	słodk
 ku	ku
 liście	liś
 niedaleko	niedaleko
-słyszeć	słyszeć
+słyszeć	słysz
 pańskie	pańsk
 uczucia	uczu
 uwierz	uwierz
@@ -2380,7 +2380,7 @@ kieszeni	kieszen
 dopasowane	dopasowane
 potrzebna	potrzebn
 bilety	bilet
-obejrzeć	obejrzeć
+obejrzeć	obejrz
 samych	sam
 gościem	gośc
 n	n
@@ -2825,7 +2825,7 @@ marzenia	mar
 leo	leo
 profesor	profesor
 zegarek	zegar
-dotrzeć	dotrzeć
+dotrzeć	dotrz
 jasno	jasno
 łatwiej	łatw
 ręką	ręką
@@ -2841,7 +2841,7 @@ znał	zn
 chciałabyś	chciałabyś
 morze	mor
 cofnąć	cofnąć
-odpowiedzieć	odpowiedzieć
+odpowiedzieć	odpowiedz
 nagrodę	nagrod
 starym	starym
 zauważyłem	zauważ
@@ -2961,7 +2961,7 @@ naprawde	naprawde
 ciężki	ciężk
 bić	bić
 kot	kot
-opowiedzieć	opowiedzieć
+opowiedzieć	opowiedz
 przerwy	przerw
 swej	swej
 czarne	czarne
@@ -3304,7 +3304,7 @@ zdrowia	zdrow
 dyrektor	dyrektor
 planety	planet
 meczu	mecz
-przypomnieć	przypomnieć
+przypomnieć	przypomn
 skończ	skończ
 podnieść	podn
 beze	beze
@@ -3588,7 +3588,7 @@ dużego	duż
 przyjdą	przyjd
 wychodź	wychodź
 dowiem	dowi
-krzyczeć	krzyczeć
+krzyczeć	krzycz
 ciasto	ciasto
 pomyślał	pomyśl
 porozmawiajmy	porozmawiajm
@@ -3682,7 +3682,7 @@ krótko	krótko
 poczuć	poczuć
 wyjeżdżam	wyjeżdż
 brad	brad
-chcieć	chcieć
+chcieć	chci
 biedna	biedn
 odchodzę	odchodz
 płacę	płac
@@ -4499,7 +4499,7 @@ próbować	próbow
 stanley	stanle
 wysłałem	wysł
 mogliby	moglib
-popatrzeć	popatrzeć
+popatrzeć	popatrz
 samotnie	samotn
 towarzyszu	towarzysz
 wyjątkowy	wyjątk
@@ -4836,7 +4836,7 @@ zaczęły	zaczęł
 czegokolwiek	czegokolw
 odpowiednie	odpowiedn
 otwarcie	otwar
-sieć	sieć
+sieć	si
 szczęśliwe	szczęśliwe
 wróciłam	wróci
 garażu	garaż
@@ -4855,7 +4855,7 @@ przejąć	przejąć
 agencji	agenc
 czekałam	czeka
 państwu	państw
-rozumieć	rozumieć
+rozumieć	rozum
 spotkajmy	spotkajm
 black	black
 decyzje	decyzje
@@ -5109,7 +5109,7 @@ straszna	straszn
 święto	święto
 narazie	naraz
 powrocie	powro
-przemyśleć	przemyśleć
+przemyśleć	przemyśl
 radzisz	radzisz
 twierdzą	twierdz
 zachodu	zachod
@@ -5178,7 +5178,7 @@ garść	garść
 stanowiska	stanowisk
 wypić	wyp
 zauważyć	zauważyć
-leżeć	leżeć
+leżeć	leż
 nicky	nick
 śpię	śpię
 young	young
@@ -6062,7 +6062,7 @@ zdobędę	zdobęd
 złodziejem	złodziej
 bratu	brat
 ciążę	ciąż
-istnieć	istnieć
+istnieć	istn
 kutasa	kutas
 letni	letn
 słabo	słabo
@@ -6311,7 +6311,7 @@ przerażona	przerażon
 publicznie	publiczn
 słówko	słówko
 celowo	celowo
-przyjrzeć	przyjrzeć
+przyjrzeć	przyjrz
 samotności	samotnośc
 troje	troje
 bądźmy	bądźm
@@ -6393,7 +6393,7 @@ zostawia	zostaw
 baba	baba
 ciszy	cisz
 korzyści	korzyśc
-przelecieć	przelecieć
+przelecieć	przelec
 siedzą	siedz
 słabe	słabe
 snach	snach
@@ -6597,7 +6597,7 @@ zapłać	zapł
 gust	gust
 kryje	kryje
 naukowcy	naukowc
-oprzeć	oprzeć
+oprzeć	oprz
 sumienia	sum
 trupa	trup
 wierzył	wierzy
@@ -6804,7 +6804,7 @@ rodzicom	rodzic
 testów	test
 tracić	trac
 zostawi	zostaw
-cierpieć	cierpieć
+cierpieć	cierp
 kung	kung
 lotniska	lotnisk
 russell	russell
@@ -6977,7 +6977,7 @@ działka	działk
 kłamstw	kłamstw
 more	more
 opór	opór
-przewidzieć	przewidzieć
+przewidzieć	przewidz
 spóźnię	spóźni
 wakacjach	wakacj
 brzydki	brzydk
@@ -7100,7 +7100,7 @@ agencie	agen
 julio	julio
 kształt	kształt
 nade	nade
-rozejrzeć	rozejrzeć
+rozejrzeć	rozejrz
 departament	departament
 księdzem	księdz
 mordercę	morderc
@@ -7354,7 +7354,7 @@ pieszo	pieszo
 rak	rak
 rozwiązania	rozwiąz
 wymienić	wymien
-zajrzeć	zajrzeć
+zajrzeć	zajrz
 zechcę	zechc
 eh	eh
 jasnej	jasn
@@ -8085,7 +8085,7 @@ głód	głód
 granicą	granic
 najgorszym	najgorszym
 omówić	omów
-polecieć	polecieć
+polecieć	polec
 prędkością	prędkości
 przejścia	przejś
 rzeką	rzek
@@ -8320,7 +8320,7 @@ trudniej	trudn
 trudności	trudnośc
 zapłacą	zapłac
 bogatych	bogat
-boleć	boleć
+boleć	bol
 daruj	daruj
 dopuścić	dopuśc
 dystans	dystans
@@ -8958,7 +8958,7 @@ prywatności	prywatnośc
 spotkała	spotkał
 stroną	stron
 twarde	twarde
-ujrzeć	ujrzeć
+ujrzeć	ujrz
 zapominasz	zapomin
 zdrada	zdrad
 złamałeś	złamałeś
@@ -9275,7 +9275,7 @@ papierów	papier
 porabiasz	porab
 porucznika	porucznik
 project	project
-przejrzeć	przejrzeć
+przejrzeć	przejrz
 przeszedłem	przeszed
 szkła	szkł
 szkół	szkó
@@ -9471,7 +9471,7 @@ niebios	niebios
 pogotowiu	pogotowi
 połączone	połączone
 pomyliłem	pomyl
-śmieć	śmieć
+śmieć	śmi
 wsiadać	wsiad
 zabijając	zabijaj
 zjedzmy	zjedzm
@@ -10316,7 +10316,7 @@ położył	położy
 szczątki	szczątk
 sztuką	sztuk
 terapię	terapi
-umieć	umieć
+umieć	umi
 warzywa	warzyw
 wierzycie	wierz
 budowę	budow
@@ -10488,7 +10488,7 @@ kotów	kot
 krąg	krąg
 mydło	mydło
 naleśniki	naleśnik
-należeć	należeć
+należeć	należ
 obłęd	obłęd
 przybyłeś	przybyłeś
 pytała	pytał
@@ -10766,7 +10766,7 @@ szlak	szl
 traktował	traktow
 uciekam	uciek
 wskazówek	wskaz
-wspomnieć	wspomnieć
+wspomnieć	wspomn
 zmęczeni	zmęczen
 baron	baron
 bólem	ból
@@ -11366,7 +11366,7 @@ flota	flot
 gotówka	gotówk
 josie	jos
 kraje	kraje
-milczeć	milczeć
+milczeć	milcz
 money	mone
 namówić	nam
 nara	nara
@@ -12754,7 +12754,7 @@ lincolna	lincoln
 odezwał	odezw
 odlot	odlot
 otworzą	otworz
-płeć	płeć
+płeć	pł
 pociągi	pociąg
 popełnia	pope
 przepraszaj	przeprasz
@@ -13338,7 +13338,7 @@ wnuka	wnuk
 wspomniałeś	wspomniałeś
 zabawek	zabaw
 zamknąłem	zamkn
-zawrzeć	zawrzeć
+zawrzeć	zawrz
 zimę	zimę
 zostaliście	zostaliś
 aniołów	anio
@@ -13417,7 +13417,7 @@ modelką	modelk
 nastąpiła	nastąpił
 nauczyli	nauczyl
 numerek	numer
-odlecieć	odlecieć
+odlecieć	odlec
 osobistą	osobist
 oszczędzać	oszczędz
 pasja	pasj
@@ -13983,7 +13983,7 @@ paskudnie	paskudn
 pieniadze	pieniadze
 plaża	plaż
 podziwiać	podziw
-posiedzieć	posiedzieć
+posiedzieć	posiedz
 prania	pra
 przegra	przegr
 przekleństwo	przekleństwo
@@ -14378,7 +14378,7 @@ usłyszeliśmy	usłyszeliśm
 wariatką	wariatk
 węgiel	węgiel
 wyjedź	wyjedź
-wypowiedzieć	wypowiedzieć
+wypowiedzieć	wypowiedz
 yan	yan
 złotem	złot
 abraham	abrah
@@ -14938,7 +14938,7 @@ umówiona	umówion
 uszami	usz
 uwadze	uwadze
 wprowadza	wprowadz
-wrzeszczeć	wrzeszczeć
+wrzeszczeć	wrzeszcz
 wspiąć	wspiąć
 wydało	wydało
 załadować	załadow
@@ -16897,7 +16897,7 @@ znad	znad
 beznadziejnie	beznadziejn
 broda	brod
 bronisz	bronisz
-brzmieć	brzmieć
+brzmieć	brzm
 desperacko	desperacko
 dokończę	dokończ
 dwójki	dwójk
@@ -17110,7 +17110,7 @@ roya	roya
 saddam	sadd
 samica	samic
 skrzynce	skrzyn
-szaleć	szaleć
+szaleć	szal
 szmaty	szmat
 twardym	twardym
 wieczna	wieczn
@@ -17334,7 +17334,7 @@ jonesa	jones
 katastrofę	katastrof
 michaelem	michael
 moralne	moralne
-musieć	musieć
+musieć	musi
 oczekiwał	oczekiw
 otwierasz	otwier
 peru	peru
@@ -18355,7 +18355,7 @@ wyrwał	wyrw
 wywalić	wywal
 zabierajmy	zabierajm
 zaklęcia	zakl
-zależeć	zależeć
+zależeć	zależ
 zamierzałam	zamierza
 zasłużyli	zasłużyl
 zawiezie	zawiez
@@ -18619,7 +18619,7 @@ szekspir	szekspir
 trafiłaś	trafiłaś
 trawki	trawk
 troszczysz	troszczysz
-wesprzeć	wesprzeć
+wesprzeć	wesprz
 wheeler	wheeler
 wieloryb	wieloryb
 wizycie	wizy
@@ -18742,7 +18742,7 @@ weszło	weszło
 weterynarza	weterynarz
 wieśniacy	wieśniac
 wygłosić	wygłos
-wymyśleć	wymyśleć
+wymyśleć	wymyśl
 wynoszę	wynosz
 zakonnicą	zakonnic
 zaopatrzenie	zaopatrz
@@ -19940,7 +19940,7 @@ podpowiada	podpowiad
 pogląd	pogląd
 polecił	polec
 polubi	polub
-porozumieć	porozumieć
+porozumieć	porozum
 potraktować	potraktow
 powiada	powiad
 pozdrowić	pozdrow
@@ -21215,7 +21215,7 @@ grzeczne	grzeczne
 handlarzem	handlarz
 imperatora	imperator
 istnieję	istniej
-jęczeć	jęczeć
+jęczeć	jęcz
 joon	joon
 kalibru	kalibr
 klein	klein
@@ -21279,7 +21279,7 @@ wstawajcie	wstawaj
 wybrano	wybrano
 wybrzeży	wybrzeż
 wylał	wyl
-wylecieć	wylecieć
+wylecieć	wylec
 wypaść	wyp
 wypróbuj	wypróbuj
 wyraźne	wyraźne
@@ -21718,7 +21718,7 @@ wykryto	wykryto
 wykrywacz	wykrywacz
 wymagało	wymagało
 wyroki	wyrok
-wytrzeć	wytrzeć
+wytrzeć	wytrz
 zablokowany	zablokowan
 zamieszkam	zamieszk
 zasadą	zasad
@@ -23549,7 +23549,7 @@ wycofuje	wycofuje
 wydajemy	wydaj
 wyprawie	wypraw
 wznosi	wznos
-zabrzmieć	zabrzmieć
+zabrzmieć	zabrzm
 zamówiłam	zamówi
 zaprzeczać	zaprzecz
 zdala	zdal
@@ -24069,7 +24069,7 @@ użyty	użyt
 wariuje	wariuje
 wiadra	wiadr
 wierzyłeś	wierzyłeś
-wisieć	wisieć
+wisieć	wisi
 wkurzyłeś	wkurzyłeś
 wskaż	wskaż
 wyciągnęła	wyciągnęł
@@ -24920,7 +24920,7 @@ studentami	student
 symbolizuje	symbolizuje
 szpitalem	szpital
 śmierdzące	śmierdz
-świeć	świeć
+świeć	świ
 tradycje	tradycje
 trafienie	traf
 trzymania	trzym
@@ -25176,7 +25176,7 @@ podjechać	podjech
 podjęła	podjęł
 pope	pope
 popełniamy	popełn
-poprzeć	poprzeć
+poprzeć	poprz
 popularność	popularność
 popyt	popyt
 posuwasz	posuw
@@ -25698,7 +25698,7 @@ kultu	kult
 lawson	lawson
 ładnej	ładn
 łajdakiem	łajdak
-łokieć	łokieć
+łokieć	łoki
 maniakiem	maniak
 masakry	masakr
 mg	mg
@@ -26012,7 +26012,7 @@ odbywają	odbywaj
 odgrywać	odgryw
 odkryte	odkryte
 odkurzacz	odkurzacz
-oświeć	oświeć
+oświeć	oświ
 pałę	pałę
 parterze	parter
 pawia	paw
@@ -26494,7 +26494,7 @@ wyciąg	wyciąg
 wykorzystane	wykorzystane
 wypłynie	wypłyn
 wystarczyłoby	wystarczyłob
-wyzdrowieć	wyzdrowieć
+wyzdrowieć	wyzdrow
 wzgórzem	wzgórz
 yen	yen
 zakażenie	zakaż
@@ -27577,7 +27577,7 @@ zawołanie	zawo
 zawraca	zawrac
 zbliżysz	zbliżysz
 zdani	zdan
-zestarzeć	zestarzeć
+zestarzeć	zestarz
 zeusa	zeus
 zgadzacie	zgadz
 zgraja	zgraj
@@ -28124,7 +28124,7 @@ dent	dent
 diagnozę	diagnoz
 dogadaliśmy	dogadaliśm
 dojadę	dojad
-dojrzeć	dojrzeć
+dojrzeć	dojrz
 dostarczam	dostarcz
 double	double
 dzieńdobry	dzieńdobr
@@ -28208,7 +28208,7 @@ przejmiesz	przejm
 przetnij	przetnij
 przetrwała	przetrwał
 przyjęciach	przyjęc
-przylecieć	przylecieć
+przylecieć	przylec
 przystojniaczku	przystojniaczk
 przyznają	przyznaj
 pszenicy	pszenic
@@ -28510,7 +28510,7 @@ dmuchać	dmuch
 dobrobyt	dobrobyt
 dokładkę	dokładk
 dokonania	dokon
-domyśleć	domyśleć
+domyśleć	domyśl
 dotrzymuje	dotrzymuje
 dowolny	dowoln
 ekstazy	ekstaz
@@ -28563,7 +28563,7 @@ oddałabym	oddał
 oglądalność	oglądalność
 okrzyki	okrzyk
 pamiętnika	pamiętnik
-paznokieć	paznokieć
+paznokieć	paznok
 pierze	pier
 pigułka	pigułk
 piszemy	pisz
@@ -28765,7 +28765,7 @@ potężni	potężn
 powodzeniem	powodzen
 powstrzymajcie	powstrzymaj
 pozbyłem	pozb
-pożreć	pożreć
+pożreć	pożr
 pożyczam	pożycz
 północne	północne
 pragi	prag
@@ -29925,7 +29925,7 @@ sš	sš
 stosunkowo	stosunkowo
 szpinak	szpin
 ściśnij	ściśnij
-śmierdzieć	śmierdzieć
+śmierdzieć	śmierdz
 śnieżka	śnieżk
 świętach	świę
 talbot	talbot
@@ -30150,7 +30150,7 @@ zabierali	zabieral
 zademonstrować	zademonstrow
 zajęłam	zaję
 zakazu	zakaz
-zamieć	zamieć
+zamieć	zami
 zamówiłeś	zamówiłeś
 zapisała	zapisał
 zaręczyn	zaręczyn
@@ -30545,7 +30545,7 @@ wykorzystuję	wykorzystuj
 wynająłeś	wynająłeś
 wysiądę	wysiąd
 wytrzymałość	wytrzymałość
-zaboleć	zaboleć
+zaboleć	zabol
 zachowała	zachował
 zaciągnąłem	zaciągn
 zaczynała	zaczynał
@@ -30678,7 +30678,7 @@ opuszczeniu	opuszcz
 orkiestrę	orkiestr
 orzechowym	orzechowym
 oskarżyciel	oskarżyciel
-oszaleć	oszaleć
+oszaleć	oszal
 pacyfik	pacyfik
 pańskimi	pańskim
 paulette	paulette
@@ -31174,7 +31174,7 @@ zapewnienie	zapewn
 zaprzeczy	zaprzecz
 zarobek	zarob
 zastrzeliła	zastrzelił
-zaszaleć	zaszaleć
+zaszaleć	zaszal
 zawieszenia	zawiesze
 zdolnościami	zdolnośc
 zgaduj	zgaduj
@@ -32050,7 +32050,7 @@ wyłaźcie	wyłaź
 wynagrodzenia	wynagrodze
 wypłynął	wypłyną
 wyruszyli	wyruszyl
-wywrzeć	wywrzeć
+wywrzeć	wywrz
 zamrożony	zamrożon
 zapalimy	zapalim
 zapłacone	zapłacone
@@ -32644,7 +32644,7 @@ natchnienie	natchn
 niebiesko	niebiesko
 niedorozwinięty	niedorozwinięt
 niemądre	niemądre
-nienawidzieć	nienawidzieć
+nienawidzieć	nienawidz
 niepewne	niepewne
 nieskończone	nieskończone
 nieudaczników	nieudacznik
@@ -32925,7 +32925,7 @@ popularności	popularnośc
 porannej	porann
 posesji	posesj
 postrzegać	postrzeg
-poświeć	poświeć
+poświeć	pośw
 potrząśnij	potrząśnij
 prawdopodobieństwa	prawdopodobieństw
 prowiant	prowiant
@@ -33394,7 +33394,7 @@ prem	pr
 prochem	proch
 przebudzenie	przebudz
 przedniej	przedn
-przeleć	przeleć
+przeleć	przel
 przemianę	przemian
 przysmak	przysm
 przywiązanie	przywiąz
@@ -34774,7 +34774,7 @@ pożałujecie	pożałuje
 prądy	prąd
 przechodź	przechodź
 przechować	przechow
-przeć	przeć
+przeć	prz
 przemycić	przemyc
 przykra	przykr
 przyłączcie	przyłącz
@@ -35313,7 +35313,7 @@ pomagałeś	pomagałeś
 porządnej	porządn
 posłuchają	posłuchaj
 postawie	postaw
-poszaleć	poszaleć
+poszaleć	poszal
 potencjalne	potencjalne
 powtórki	powtórk
 pozbyłeś	pozbyłeś
@@ -35435,7 +35435,7 @@ zobowiązani	zobowiązan
 zwiedzać	zwiedz
 żarcik	żarcik
 żądze	żądze
-żreć	żreć
+żreć	żr
 adrienne	adrienne
 analizie	analiz
 awaryjnego	awaryjn
@@ -36039,7 +36039,7 @@ czyz	czyz
 destrukcji	destrukc
 deszczowy	deszcz
 devil	devil
-dolecieć	dolecieć
+dolecieć	dolec
 dołączą	dołącz
 doświadczeniu	doświadcz
 doznania	dozn
@@ -36272,7 +36272,7 @@ whatever	whatever
 which	which
 whitey	white
 wice	wice
-wieć	wieć
+wieć	wi
 wilkami	wilk
 wiozę	wioz
 wlasciwie	wlasciw
@@ -36885,7 +36885,7 @@ zadała	zadał
 zaden	zaden
 zagraniczny	zagran
 zainwestowałem	zainwestow
-zaistnieć	zaistnieć
+zaistnieć	zaistn
 zakrętem	zakręt
 zależny	zależn
 zasadzki	zasadzk
@@ -37210,7 +37210,7 @@ zbiórki	zbiórk
 zemdlałem	zemdl
 zerknę	zerkn
 zerwane	zerwane
-zetrzeć	zetrzeć
+zetrzeć	zetrz
 zeznaje	zeznaje
 zgromadzić	zgromadz
 zięciem	zięc
@@ -37590,7 +37590,7 @@ definicję	definicj
 dostarczona	dostarczon
 doznała	doznał
 dożyje	dożyje
-drzeć	drzeć
+drzeć	drz
 dzyń	dzyń
 eat	eat
 elektrownia	elektrow
@@ -38378,7 +38378,7 @@ prima	prim
 przebij	przebij
 przebrał	przebr
 przecinek	przecin
-przedrzeć	przedrzeć
+przedrzeć	przedrz
 przedyskutujemy	przedyskutuj
 przegapię	przegapi
 przegapimy	przegapim
@@ -38821,7 +38821,7 @@ tunelach	tunel
 twórców	twórc
 tylną	tyln
 ubezpieczeniową	ubezpieczeniow
-ucierpieć	ucierpieć
+ucierpieć	ucierp
 uczulenie	uczul
 udawałaś	udawałaś
 uderzając	uderzaj
@@ -38887,7 +38887,7 @@ zamachy	zamach
 zapobiega	zapobieg
 zapomniana	zapomnian
 zaręczynach	zaręczyn
-zatrzeć	zatrzeć
+zatrzeć	zatrz
 zawiśnie	zawiśn
 zboczone	zboczone
 zbudzić	zbudz
@@ -39404,7 +39404,7 @@ opóźniona	opóźnion
 osiągają	osiągaj
 oszalały	oszalał
 oszukała	oszukał
-pachnieć	pachnieć
+pachnieć	pachn
 papierki	papierk
 parysie	parys
 pasażerami	pasażer
@@ -39846,7 +39846,7 @@ uciekinierów	uciekinier
 uczynimy	uczynim
 uderzeniowa	uderzen
 upewnijmy	upewnijm
-usiedzieć	usiedzieć
+usiedzieć	usiedz
 usłyszeniu	usłysz
 warcaby	warcab
 wczesnego	wczesn
@@ -40056,7 +40056,7 @@ obelgi	obelg
 obiecywał	obiecyw
 obstawia	obstaw
 octavio	octavio
-odeprzeć	odeprzeć
+odeprzeć	odeprz
 odmienił	odmien
 odmieniło	odmieniło
 odwalić	odwal
@@ -40643,7 +40643,7 @@ yoyo	yoyo
 zachowali	zachowal
 zacisnąć	zacisnąć
 zaczeli	zaczel
-zadrzeć	zadrzeć
+zadrzeć	zadrz
 zaginionym	zaginionym
 zajęły	zajęł
 zakuty	zakut
@@ -41903,7 +41903,7 @@ bezpieczniejsza	bezpieczniejsz
 bezwzględnie	bezwzględn
 bijatyka	bijat
 blad	blad
-błyszczeć	błyszczeć
+błyszczeć	błyszcz
 bogart	bogart
 bradem	brad
 brązowym	brązowym
@@ -42897,7 +42897,7 @@ peabody	peabod
 pełnić	pełn
 piątce	piąt
 plagę	plag
-pleć	pleć
+pleć	pl
 pluje	pluje
 płatka	płatk
 płynem	płyn
@@ -42998,7 +42998,7 @@ solidarność	solidarność
 sosny	sosn
 spytają	spytaj
 stamtad	stamtad
-sterczeć	sterczeć
+sterczeć	stercz
 sterowane	sterowane
 stoku	stok
 strachy	strach
@@ -43305,7 +43305,7 @@ muły	muły
 muzea	muze
 myjesz	myj
 mylili	mylil
-mysleć	mysleć
+mysleć	mysl
 nabijam	nabij
 naboo	naboo
 nabrzeżu	nabrzeż
@@ -43380,7 +43380,7 @@ pociagu	pociag
 pocztowe	poczt
 poćwiczymy	poćwiczym
 poderwał	poderw
-podetrzeć	podetrzeć
+podetrzeć	podetrz
 podkład	podkład
 podniosłam	podnios
 podzielona	podzielon
@@ -44036,7 +44036,7 @@ zakuć	zakuć
 zamrażarce	zamrażar
 zanotuj	zanotuj
 zapaśnikiem	zapaśnik
-zapowiedzieć	zapowiedzieć
+zapowiedzieć	zapowiedz
 zaproponuj	zaproponuj
 zapytac	zapytac
 zaraziła	zaraził
@@ -44996,7 +44996,7 @@ zazdrosnym	zazdrosnym
 zażąda	zażąd
 zdobędziecie	zdobędz
 zdobywania	zdobyw
-zemdleć	zemdleć
+zemdleć	zemdl
 zeznała	zeznał
 zeznawała	zeznawał
 zgarnęliśmy	zgarnęliśm
@@ -47376,7 +47376,7 @@ podniesienia	podnies
 podwoję	podwoj
 pokręcę	pokręc
 poleciła	polecił
-poleżeć	poleżeć
+poleżeć	poleż
 polio	polio
 popracujesz	popracuj
 popularnych	popularn
@@ -47996,7 +47996,7 @@ rozmyśliłem	rozmyśl
 ruchami	ruch
 rudą	rudą
 rutynę	rutyn
-ryczeć	ryczeć
+ryczeć	rycz
 rytmy	rytm
 rywali	rywal
 ryzykowałeś	ryzykowałeś
@@ -48904,7 +48904,7 @@ kaktusa	kaktus
 kalkucie	kalk
 kalle	kalle
 kanadyjskiej	kanadyjsk
-kapeć	kapeć
+kapeć	kap
 kapustą	kapust
 karalne	karalne
 karmą	karm
