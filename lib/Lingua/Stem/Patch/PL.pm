@@ -29,12 +29,6 @@ sub remove_noun {
     my ($word) = @_;
     my $length = length $word;
 
-    if ($length > 7) {
-        return $word if $word =~ s{
-            (?<= z ) acj[aąi]  # -zacja -zacją -zacji → -z
-        $}{}x;
-    }
-
     if ($length > 6) {
         return $word if $word =~ s{ (?:
             tach
