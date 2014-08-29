@@ -10,7 +10,7 @@ while (my $line = <DATA>) {
     chomp $line;
     my ($word, $stem) = split /\t/, $line;
     my $result = stem($word);
-    is $result, $stem, "$word stems to $stem" or diag (
+    is $result, $stem, "$word stems to $stem" or diag(
         '     got hex: ', dump_hex($result), "\n",
         'expected hex: ', dump_hex($stem),   "\n",
         'original hex: ', dump_hex($word),   "\n",

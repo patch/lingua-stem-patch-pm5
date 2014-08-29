@@ -16,3 +16,4 @@ t/eo-roots.t
 t/io.t
 t/io-aggressive.t
 t/io-roots.t
+t/pl.t
