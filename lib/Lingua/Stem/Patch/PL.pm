@@ -118,6 +118,7 @@ sub remove_verb {
             ąc | em
             | a[ćmł]                     # -ać -am -ał
             | i[ćł]                      # -ić -ił
+            | (?<= a    ) j              # -aj                 → -a
             | (?<= [ae] ) (?: sz | ść )  # -asz -aść -esz -eść → -a -e
         ) $}{}x;
     }
