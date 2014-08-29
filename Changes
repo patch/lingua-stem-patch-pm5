@@ -1,5 +1,8 @@
 Revision history for Perl module Lingua::Stem::Patch
 
+0.04 2014-08-29
+ - Added new Polish language stemmer (first on CPAN) #pl
+
 0.03 2014-07-16
  - Added participle stemming exceptions for words in the Fundamento #eo
  - Added participle suffix removal instead of normalization when aggressive #eo
