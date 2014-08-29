@@ -566,12 +566,12 @@ wrócić	wróc
 szybciej	szybc
 jednym	jednym
 cokolwiek	cokolw
-wierzę	wier
+wierzę	wierz
 wcale	wcale
 wieczór	wieczór
 ważne	ważne
 człowieka	człowiek
-wielki	wiel
+wielki	wielk
 nowa	nowa
 dopiero	dopiero
 ziemi	ziem
@@ -603,7 +603,7 @@ wspaniale	wspaniale
 chwili	chwil
 każdego	każd
 nowego	now
-nieźle	nieź
+nieźle	nieźle
 takich	takich
 dostać	dost
 między	międz
@@ -642,7 +642,7 @@ ogóle	ogóle
 naszym	naszym
 szkoły	szkoł
 możliwe	możliwe
-wiedział	wied
+wiedział	wiedz
 wyjść	wyjść
 wszystkiego	wszystk
 byłoby	byłob
@@ -852,7 +852,7 @@ niemożliwe	niemożliwe
 jakoś	jakoś
 zdjęcia	zdję
 stronę	stron
-wiedzą	wied
+wiedzą	wiedz
 it	it
 dziewczynę	dziewczyn
 zaczyna	zaczyn
@@ -1103,7 +1103,7 @@ los	los
 jimmy	jimm
 pewnością	pewności
 sen	sen
-wielka	wiel
+wielka	wielk
 david	david
 mówiła	mówił
 piękny	piękn
@@ -1147,7 +1147,7 @@ uciec	uciec
 paul	paul
 żartujesz	żartuj
 tygodnie	tygodn
-niezły	niez
+niezły	niezł
 poszedł	poszed
 powinna	powinn
 jakiego	jaki
@@ -1289,7 +1289,7 @@ drinka	drink
 koło	koło
 sensu	sens
 mowy	mowy
-wielkiego	wiel
+wielkiego	wielk
 skończyć	skończyć
 podaj	podaj
 pasuje	pasuje
@@ -1403,7 +1403,7 @@ drugą	drug
 pracujesz	pracuj
 dzieciak	dziec
 bill	bill
-wielką	wiel
+wielką	wielk
 znajdziesz	znajdz
 abyś	abyś
 szpitalu	szpital
@@ -1472,7 +1472,7 @@ powiedzenia	powiedze
 subedit	subedit
 wiedziałeś	wiedziałeś
 samą	samą
-wieści	wieś
+wieści	wieśc
 znajdź	znajdź
 mogło	mogło
 ochotę	ochot
@@ -1501,7 +1501,7 @@ lewo	lewo
 bobby	bobb
 zdaje	zdaje
 t	t
-niezłe	niez
+niezłe	niezłe
 zasady	zasad
 żyjesz	żyj
 zapomnieć	zapomnieć
@@ -1514,7 +1514,7 @@ matkę	matk
 danny	dann
 mocy	mocy
 siedzieć	siedzieć
-niezła	niez
+niezła	niezł
 staram	star
 zdobyć	zdobyć
 lee	lee
@@ -2023,7 +2023,7 @@ strach	str
 bycie	byc
 uczyć	uczyć
 charles	charles
-wierzy	wier
+wierzy	wierz
 zmarł	zmar
 sercu	serc
 zdecydowanie	zdecydow
@@ -2638,7 +2638,7 @@ waszego	wa
 zbliża	zbliż
 dajesz	daj
 swe	swe
-wielkiej	wiel
+wielkiej	wielk
 klasie	klas
 zapomniałam	zapomnia
 konieczne	konieczne
@@ -2880,7 +2880,7 @@ helen	helen
 kupił	kup
 udawać	udaw
 wziąłeś	wziąłeś
-niemcy	niem
+niemcy	niemc
 ust	ust
 zachowanie	zachow
 zamierza	zamierz
@@ -3476,7 +3476,7 @@ choćby	choćb
 ciepło	ciepło
 detektywie	detektyw
 kalifornii	kaliforni
-niemal	niem
+niemal	niemal
 niespodziankę	niespodziank
 sekundy	sekund
 śmiesz	śmi
@@ -4378,7 +4378,7 @@ zatrzymał	zatrzym
 jesz	je
 randka	randk
 tys	tys
-wierzą	wier
+wierzą	wierz
 jamie	jam
 rob	rob
 spotykać	spotyk
@@ -4599,7 +4599,7 @@ niezwykłe	niezwykłe
 podejrzanego	podejrzan
 prochy	proch
 rynku	rynk
-wiedzy	wied
+wiedzy	wiedz
 zobaczycie	zobacz
 jacyś	jacyś
 sammy	samm
@@ -5118,7 +5118,7 @@ obszar	obszar
 poradzimy	poradzim
 cele	cele
 mitch	mitch
-niezłą	niez
+niezłą	niezł
 obserwować	obserwow
 świadek	świad
 załogi	załog
@@ -5722,7 +5722,7 @@ zabawnie	zabawn
 zachowaj	zachowaj
 głupcze	głupcze
 ślicznie	śliczn
-wiersz	wier
+wiersz	wiersz
 zacząłeś	zacząłeś
 zdobył	zdoby
 abby	abby
@@ -5753,7 +5753,7 @@ dokument	dokument
 odpocznij	odpocznij
 opowiadać	opowiad
 osobności	osobnośc
-wiedza	wied
+wiedza	wiedz
 wirusa	wirus
 golfa	golf
 naucz	naucz
@@ -6496,7 +6496,7 @@ przysięgłych	przysięg
 stoimy	stoim
 szóstej	szóst
 terapii	terapi
-wiedzę	wied
+wiedzę	wiedz
 aah	aah
 bliski	blisk
 braciszku	braciszk
@@ -6724,7 +6724,7 @@ czerwonego	czerwon
 duszą	dusz
 jebane	jebane
 najważniejsza	najważniejsz
-niebawem	nieb
+niebawem	niebaw
 pokażcie	pokaż
 pomogło	pomogło
 reklamy	rekl
@@ -7165,7 +7165,7 @@ kolanach	kolan
 prawdziwi	prawdziw
 przyjął	przyją
 ram	ram
-wierzyłem	wier
+wierzyłem	wierz
 wisisz	wisisz
 wniosek	wnios
 zbliżyć	zbliżyć
@@ -9260,7 +9260,7 @@ podążać	podąż
 pozwalam	pozwal
 spłukany	spłukan
 uczeń	uczeń
-wierny	wier
+wierny	wiern
 adrian	adrian
 czadu	czad
 czerwonej	czerwon
@@ -10318,7 +10318,7 @@ sztuką	sztuk
 terapię	terapi
 umieć	umieć
 warzywa	warzyw
-wierzycie	wier
+wierzycie	wierz
 budowę	budow
 chodziła	chodził
 flynn	flynn
@@ -11005,7 +11005,7 @@ sherman	sherman
 spodziewałeś	spodziewałeś
 uważacie	uważ
 używane	używane
-wielcy	wiel
+wielcy	wielc
 wykończyć	wykończyć
 zajrzyj	zajrzyj
 zbrodnię	zbrodni
@@ -12659,7 +12659,7 @@ eyes	eyes
 had	had
 inteligentna	inteligentn
 karol	karol
-niemniej	niem
+niemniej	niemn
 nudzi	nudz
 obowiązku	obowiązk
 odpowiednich	odpowiednich
@@ -13478,7 +13478,7 @@ starszą	starsz
 sutki	sutk
 uwierzyli	uwierzyl
 uwolnię	uwolni
-wiecznego	wiec
+wiecznego	wieczn
 zachował	zachow
 zaopiekuje	zaopiekuje
 zdołał	zdoł
@@ -15437,7 +15437,7 @@ wyciągaj	wyciągaj
 wykonanie	wykon
 wystarczającą	wystarczając
 zabezpieczone	zabezpieczone
-zamówienia	zamów
+zamówienia	zam
 zarobiłem	zarob
 zaspokoić	zaspoko
 zda	zda
@@ -15558,7 +15558,7 @@ laurel	laurel
 łożu	łożu
 macho	macho
 międzynarodowy	międzynarod
-nieraz	nier
+nieraz	nieraz
 obejrzysz	obejrzysz
 palcu	palc
 pokazu	pokaz
@@ -19016,7 +19016,7 @@ urzędnik	urzędnik
 uszkodzeń	uszkodzeń
 używanie	używ
 widujemy	widuj
-wierna	wier
+wierna	wiern
 wodne	wodne
 wspiera	wspier
 wysłuchał	wysłuch
@@ -19222,7 +19222,7 @@ podejdę	podejd
 pojedziecie	pojedz
 potężnym	potężnym
 powtarzałem	powtarz
-przemówienia	przemów
+przemówienia	przem
 pustka	pustk
 rivers	rivers
 satelitę	satelit
@@ -19473,7 +19473,7 @@ turk	turk
 turyści	turyśc
 tytoniu	tyto
 uchu	uchu
-wierni	wier
+wierni	wiern
 wiewiórki	wiewiórk
 without	without
 wpływów	wpływ
@@ -20603,7 +20603,7 @@ napadli	napadl
 narobić	narob
 natychmiastowe	natychmiast
 niejakiego	niejak
-nieżle	nież
+nieżle	nieżle
 obserwujcie	obserwuj
 obudziłaś	obudziłaś
 odcięli	odcięl
@@ -21006,7 +21006,7 @@ telewizyjne	telewizyjne
 tima	tima
 ukochanym	ukochanym
 water	water
-wiecznej	wiec
+wiecznej	wieczn
 wkraczamy	wkracz
 wmówić	wmów
 wołał	woł
@@ -21769,7 +21769,7 @@ mira	mira
 momma	momm
 nąe	nąe
 niespodzianką	niespodziank
-niezdrowe	niez
+niezdrowe	niezdr
 obserwacją	obserw
 odzyskanie	odzysk
 once	once
@@ -23220,7 +23220,7 @@ uprawiam	upraw
 utonąć	utonąć
 waters	waters
 wierzch	wierzch
-wieśniak	wieś
+wieśniak	wieśn
 wish	wish
 wjechać	wjech
 właścicielami	właściciel
@@ -25428,7 +25428,7 @@ naprawiam	napraw
 nauczycielkę	nauczycielk
 niemiła	niemił
 niepamięć	niepamięć
-nieźli	nieź
+nieźli	nieźl
 nurkować	nurkow
 obczaj	obczaj
 obraziłem	obraz
@@ -26868,7 +26868,7 @@ nagrywa	nagryw
 negatywnie	negatywn
 next	next
 niemądra	niemądr
-niezle	niez
+niezle	niezle
 nobody	nobod
 obrazę	obraz
 ochotnicy	ochotnic
@@ -28728,7 +28728,7 @@ neda	neda
 nero	nero
 nerwach	nerw
 niesprawiedliwość	niesprawiedliwość
-nietypowe	niet
+nietypowe	nietyp
 niewiem	niew
 niezależność	niezależność
 noego	noego
@@ -29323,7 +29323,7 @@ najnowsza	najnowsz
 następca	następc
 natknąłem	natkn
 nickiem	nick
-niemca	niem
+niemca	niemc
 niewyraźnie	niewyraźn
 niezależne	niezależne
 niosę	nios
@@ -34195,7 +34195,7 @@ nieruchomość	nieruchomość
 nieszczęściem	nieszczęśc
 nieważny	nieważn
 niewdzięczna	niewdzięczn
-niewypał	niew
+niewypał	niewyp
 nikhil	nikhil
 oak	oak
 obcokrajowców	obcokrajowc
@@ -38844,7 +38844,7 @@ wąwóz	wąwóz
 wczesna	wczesn
 weekendzie	weekendz
 węgier	węgier
-wiesza	wies
+wiesza	wiesz
 wieśniaku	wieśniak
 wiruje	wiruje
 wise	wise
@@ -40222,7 +40222,7 @@ wczuć	wczuć
 webber	webber
 wejściowe	wejśc
 wieiu	wiei
-wierszami	wier
+wierszami	wiersz
 wilgoci	wilgoc
 willę	will
 williamem	william
@@ -41406,7 +41406,7 @@ weselem	wesel
 wet	wet
 wibracji	wibr
 wieczornym	wieczornym
-wiedźm	wied
+wiedźm	wiedźm
 wiewiórkę	wiewiórk
 wiktorze	wiktor
 wilgotny	wilgotn
@@ -42435,7 +42435,7 @@ niecierpliwi	niecierpliw
 nieoczekiwanego	nieoczekiwan
 niepowtarzalny	niepowtarzaln
 nieszczęśliwą	nieszczęśliw
-nietypowy	niet
+nietypowy	nietyp
 nieuchronnie	nieuchronn
 niezłej	niez
 nosferatu	nosferat
@@ -42626,7 +42626,7 @@ wellard	wellard
 wiał	wi
 widz	widz
 wieczorów	wieczor
-wieiki	wiei
+wieiki	wieik
 wiertło	wiertło
 wilgotność	wilgotność
 wisiało	wisiało
@@ -47551,7 +47551,7 @@ wciągnęło	wciągnęło
 werset	werset
 wezwana	wezwan
 wiekszość	wiekszość
-wierszem	wier
+wierszem	wiersz
 wierzeń	wierzeń
 wkurwić	wkurw
 wkurzysz	wkurzysz
@@ -48107,8 +48107,8 @@ whoop	whoop
 wieczor	wieczor
 wieczornej	wieczorn
 wieprze	wiepr
-wieprzowe	wiep
-wierną	wier
+wieprzowe	wieprz
+wierną	wiern
 więźniom	więźn
 wilgotno	wilgotno
 wiosennych	wiosenn
@@ -49273,8 +49273,8 @@ whistlera	whistler
 whitley	whitle
 wiadome	wiadome
 wiceprezydencie	wiceprezyden
-wiecznych	wiec
-wiedeń	wied
+wiecznych	wieczn
+wiedeń	wiedeń
 wielbicielką	wielbicielk
 wkraczają	wkraczaj
 wkurwił	wkurw
@@ -49899,7 +49899,7 @@ wędrówka	wędrówk
 wf	wf
 whit	whit
 whittier	whittier
-wieprz	wiep
+wieprz	wieprz
 wieśniaki	wieśniak
 windows	windows
 włości	włośc

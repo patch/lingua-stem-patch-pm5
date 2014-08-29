@@ -130,13 +130,10 @@ sub remove_adverb {
     my $length = length $word;
 
     if ($length > 4) {
-        return $1 if $word =~ s{^
-            ( [nw]ie \X ) \X{2}  # nie- wie-
-        $}{}x;
-
-        return $word if $word =~ s{
-            (?<= r ) ze  # -rze → -r
-        $}{}x;
+        return $word if $word =~ s{ (?:
+              (?<= r    ) ze  # -rze      → -r
+            | (?<= [nw] ) ie  # -nie -wie → -n -w
+        ) $}{}x;
     }
 
     return $word;
