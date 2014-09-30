@@ -153,10 +153,14 @@ sub remove_other {
     my $length = length $word;
 
     if ($length > 4) {
-        return $word if $word =~ s{ (?:
-            [aąęiłuy]
-            | i[ae]  # -ia -ie
-        ) $}{}x;
+        return $word if $word =~ s{
+            i[ae]  # -ia -ie
+        $}{}x;
+    }
+
+    if ($length > 3) {
+        return $word
+            if $word =~ s{ [aąęiłuy] $}{}x;
     }
 
     return $word;

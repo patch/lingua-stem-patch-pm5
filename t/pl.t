@@ -7,9 +7,9 @@ use Lingua::Stem::Patch::PL qw( stem );
 
 # nouns
 is stem('gazetach'),    'gaze',    'remove -tach';
-is stem('sytuacja'),    'sytu',    'remove -acja';
-is stem('sytuacją'),    'sytu',    'remove -acją';
-is stem('sytuacji'),    'sytu',    'remove -acji';
+is stem('sytuacja'),    'syt',     'remove -acja';
+is stem('sytuacją'),    'syt',     'remove -acją';
+is stem('sytuacji'),    'syt',     'remove -acji';
 is stem('kochanie'),    'koch',    'remove -anie';
 is stem('ubraniu'),     'ubr',     'remove -aniu';
 is stem('tłumaczenie'), 'tłumacz', 'remove -enie';
@@ -18,8 +18,8 @@ is stem('spotyka'),     'spot',    'remove -ka from -tyka';
 is stem('latach'),      'lat',     'remove -ach';
 is stem('czasami'),     'czas',    'remove -ami';
 is stem('miejsce'),     'miejs',   'remove -ce';
-is stem('świata'),      'świa',    'remove -ta';
-is stem('pojęcia'),     'poję',    'remove -cia';
+is stem('świata'),      'świ',     'remove -ta';
+is stem('pojęcia'),     'poj',     'remove -cia';
 is stem('pięciu'),      'pię',     'remove -ciu';
 is stem('zobaczenia'),  'zobacze', 'remove -nia';
 is stem('tygodniu'),    'tygod',   'remove -niu';
@@ -61,7 +61,7 @@ is stem('pamiętasz'),   'pamięt',    'remove -asz';
 is stem('chcesz'),      'chc',       'remove -esz';
 is stem('ukraść'),      'ukr',       'remove -aść';
 is stem('znieść'),      'zni',       'remove -eść';
-is stem('mówiąc'),      'mówi',      'remove -ąc';
+is stem('mówiąc'),      'mów',       'remove -ąc';
 is stem('zostać'),      'zost',      'remove -ać';
 is stem('przepraszam'), 'przeprasz', 'remove -am';
 is stem('miał'),        'mi',        'remove -ał';
@@ -69,7 +69,7 @@ is stem('mieć'),        'mi',        'remove -eć';
 is stem('jestem'),      'jest',      'remove -em';
 is stem('zrobić'),      'zrob',      'remove -ić';
 is stem('zrobił'),      'zrob',      'remove -ił';
-is stem('tutaj'),       'tuta',      'remove -j from -aj';
+is stem('kraj'),        'kra',       'remove -j from -aj';
 is stem('masz'),        'ma',        'remove -sz from -asz';
 is stem('wpaść'),       'wpa',       'remove -ść from -aść';
 is stem('wiesz'),       'wie',       'remove -sz from -esz';
@@ -82,7 +82,7 @@ is stem('prawie'), 'praw', 'remove -ie from -wie';
 
 # plural
 is stem('czasami'), 'czas',  'remove -ami';
-is stem('poziom'),  'pozi',  'remove -om';
+is stem('poziom'),  'poz',   'remove -om';
 is stem('dolarów'), 'dolar', 'remove -ów';
 
 # others
