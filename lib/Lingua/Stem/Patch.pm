@@ -7,7 +7,7 @@ use Carp;
 use Moo;
 use namespace::clean;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 my @languages   = qw( eo io pl );
 my %is_language = map { $_ => 1 } @languages;
@@ -71,7 +71,7 @@ Lingua::Stem::Patch - Patch stemmers for Esperanto and Ido
 
 =head1 VERSION
 
-This document describes Lingua::Stem::Patch v0.04.
+This document describes Lingua::Stem::Patch v0.05.
 
 =head1 SYNOPSIS
 
