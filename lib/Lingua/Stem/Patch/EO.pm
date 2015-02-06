@@ -61,6 +61,9 @@ sub stem {
         # -’ -' → -o
         s{ [’'] $}{o}x;
 
+        # ’st- 'st- → est-
+        s{^ [’'] (?= st (?: [aiou] s | [iu] ) $ ) }{e}x;
+
         # nouns, adjectives, -u correlatives:
         # -oj -on -ojn → o
         # -aj -an -ajn → a
