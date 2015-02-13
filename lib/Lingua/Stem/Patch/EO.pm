@@ -182,7 +182,7 @@ Nick Patch <patch@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-© 2014 Nick Patch
+© 2014–2015 Nick Patch
 
 This library is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
