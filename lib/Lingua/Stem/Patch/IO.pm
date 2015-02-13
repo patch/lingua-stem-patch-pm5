@@ -6,7 +6,7 @@ use strict;
 use warnings;
 use parent 'Exporter';
 
-our $VERSION   = '0.05';
+our $VERSION   = '0.06';
 our @EXPORT_OK = qw( stem stem_io stem_aggressive stem_io_aggressive );
 
 *stem_io            = \&stem;
@@ -73,7 +73,7 @@ Lingua::Stem::IO - Ido stemmer
 
 =head1 VERSION
 
-This document describes Lingua::Stem::Patch::IO v0.05.
+This document describes Lingua::Stem::Patch::IO v0.06.
 
 =head1 SYNOPSIS
 

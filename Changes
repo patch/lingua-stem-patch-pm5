@@ -1,5 +1,8 @@
 Revision history for Perl module Lingua::Stem::Patch
 
+0.06 2015-02-13
+ - Added stemming rule to unabbreviate Esperanto ’st- and 'st- to est- #eo
+
 0.05 2014-09-30
  - Remove 1-letter suffixes from 4-letter Polish words instead of just 5-letter
    words and greater, for example `kota` and `koty` are now both stemmed to `kot`
