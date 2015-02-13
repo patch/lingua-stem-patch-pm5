@@ -29,7 +29,8 @@ $stem = $stemmer->stem($word);
 
 This module contains a collection of stemmers for multiple languages using the
 Patch stemming algorithms. The languages currently implemented are
-[Esperanto](https://metacpan.org/pod/Lingua::Stem::Patch::EO) and [Ido](https://metacpan.org/pod/Lingua::Stem::Patch::IO).
+[Esperanto](https://metacpan.org/pod/Lingua::Stem::Patch::EO), [Ido](https://metacpan.org/pod/Lingua::Stem::Patch::IO), and
+[Polish](https://metacpan.org/pod/Lingua::Stem::Patch::PL).
 
 This is a new project under active development and the current stemming
 algorithms are likely to change.

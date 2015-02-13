@@ -90,7 +90,8 @@ This document describes Lingua::Stem::Patch v0.06.
 
 This module contains a collection of stemmers for multiple languages using the
 Patch stemming algorithms. The languages currently implemented are
-L<Esperanto|Lingua::Stem::Patch::EO> and L<Ido|Lingua::Stem::Patch::IO>.
+L<Esperanto|Lingua::Stem::Patch::EO>, L<Ido|Lingua::Stem::Patch::IO>, and
+L<Polish|Lingua::Stem::Patch::PL>.
 
 This is a new project under active development and the current stemming
 algorithms are likely to change.
